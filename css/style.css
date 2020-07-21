@@ -33,8 +33,9 @@ section .star{
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 70vh;
+    width: 65%;
+    margin-left: 10em;
+    height: 90vh;
     pointer-events: none;
     animation: animate 8s ease-in-out infinite,
                 backgroundmove 16s linear infinite;
