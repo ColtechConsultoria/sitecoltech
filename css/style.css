@@ -1,0 +1,666 @@
+@import url ('https://fonts.googleapis.com/css2? family = Lato & display = swap');
+
+/* família de fontes: 'Lato', sans-serif; */
+
+*{
+    font-family: 'Lato', sans-serif;
+    box-sizing: border-box;
+
+}
+
+section {
+    position: static;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-color: #000200;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section h1{
+    position: static;
+    color: transparent;
+    font-weight: 900;
+    font-size: 12em;
+    -webkit-text-stroke: 2px #fff;
+    text-transform: uppercase;
+}
+
+section .star{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70vh;
+    pointer-events: none;
+    animation: animate 8s ease-in-out infinite,
+                backgroundmove 16s linear infinite;
+}
+
+section .star.star1{
+    animation-delay: 0s;
+    background: url(../stars/star1.png);
+}
+
+section .star.star1{
+    animation-delay: -1s;
+    background: url(../stars/star1.png);
+}
+
+section .star.star2{
+    animation-delay: -2s;
+    background: url(../stars/star2.png);
+}
+
+section .star.star3{
+    animation-delay: -3s;
+    background: url(../stars/star3.png);
+}
+
+section .star.star4{
+    animation-delay: -4s;
+    background: url(../stars/star4.png);
+}
+
+section .star.star5{
+    animation-delay: -5s;
+    background: url(../stars/star5.png);
+}
+
+section .star.star6{
+    animation-delay: -6s;
+    background: url(../stars/star6.png);
+}
+
+section .star.star7{
+    animation-delay: -7s;
+    background: url(../stars/star7.png);
+}
+
+section .star.star8{
+    animation-delay: -8s;
+    background: url(../stars/star8.png);
+}
+@keyframes animate
+{
+    0%,20%,40%,60%,80%,100%
+    {
+        opacity: 0;
+    }
+
+    10%,30%,50%,70%
+    {
+        opacity: 1;
+    }
+}
+
+@keyframes backgroundmove
+{
+    0%
+    {
+        transform: scale(1);  
+    }
+    100%
+    {
+        transform: scale(2);
+    }
+}
+.logo {
+    width: 100%;
+    height: 56px;
+    font-size: 0px;
+    margin-top: 16px;
+    margin-bottom: 27px;
+}
+
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cabecalho {
+    width: 100%;
+    float: left;
+    background-color: #000200
+}
+
+.menuu{
+    width: 15%;
+    float: right;
+}
+
+.menu {
+    margin-top: 5px;
+    width: 100%;
+    height: 48px;
+    background-color: #000200
+    font-family: 'Lato', sans-serif, Helvetica, sans-serif;
+}
+
+.menu ul {
+    list-style: none;
+    position: relative;
+    
+
+}
+
+.menu ul li {
+    width: 24.8%;
+    float: left;
+    border-left: orange solid 0.5px;
+    
+}
+
+.menu a{
+    padding: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+}
+
+.menu ul ul {
+    width: 100%;
+    position: absolute;
+    visibility: hidden;
+}
+
+.menu ul li:hover ul{
+    position: relative;
+    visibility: visible;
+}
+
+.menu a:hover{
+    background-color: #f4f4f4;
+    color: #555;
+}
+
+.menu ul ul li{
+    width: 100%;
+    float: none;
+    border-bottom: solid 1px #ccc;
+}
+
+.menu ul ul li a{
+    width: 100%;
+}
+
+label[for="bt_menu"] {
+    padding: 5px;
+    background-color: #222;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 65px;
+    height: 65px;
+    border-radius: 15px ;
+    transition: all .3s linear;
+    margin-top: 15px;
+}
+
+span {
+    float: right;
+    width: 35px;
+    height: 4px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3s linear;
+    margin-top: 25px;
+    margin-left: -15px;
+}
+
+
+span:before {
+    content: '';
+    width: 35px;
+    height: 4px;
+    bottom: -12px;
+    margin-left: -18px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3 linear;
+}
+
+span:after {
+    content: '';
+    width: 35px;
+    height: 4px;
+    top: -12px;
+    margin-left: -18px;
+    position: absolute;
+    background-color: #fff;
+    transition: all .3 linear;
+}
+
+#bt_menu:checked ~ * span{
+    background-color: transparent;
+}
+
+#bt_menu:checked ~ * span:before{
+    transition: all .3 linear;
+    transform: translate(0px, -12px) rotate(-45deg)
+
+}
+
+#bt_menu:checked ~ * span:after{
+    transition: all .3 linear;
+    transform: translate(0px, 12px) rotate(45deg)
+}
+
+#bt_menu:checked ~ * label{
+    transition: all .3 linear;
+    border-radius: 50%;
+}
+
+#bt_menu{
+    display: none;
+}
+
+label[for="bt_menu"]{
+    display: none;
+}
+
+span{
+    display: none;
+}
+
+.banner-img{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.banner {
+    width: 100%;
+    float: left;
+    text-align: center;
+    padding: 3% 4%;
+    background: url(../img/banner.png) no-repeat fixed;
+}
+/* Scroll Progress */
+
+::-webkit-scrollbar {
+    width: 0;
+}
+
+#scrollpath{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05);
+}
+
+#progressbar{
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 6px;
+    height: 100%;
+    background: linear-gradient(to top, #101e3f,#f78620);
+    animation: animatee 5s linear infinite;
+
+}
+
+@keyframes animatee {
+    0%, 100%
+    {
+        filter: hue-rotate(0deg)
+    }
+    50%
+    {
+        filter: hue-rotate(360deg)
+    }
+}
+
+#progressbar:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #101e3f,#f78620);
+    filter: blur(10px);
+}
+
+#progressbar:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, #101e3f,#f78620);
+    filter: blur(10px);
+}
+
+/* Quem somos */
+
+.apresentação{
+    width: 100%;
+    height: 1300px;
+    background-color: #000200;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.titulo h2{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    position: static;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 3em;
+    -webkit-text-stroke: 0.7px #fff;
+    text-transform: uppercase;
+}
+
+IMG.foto {
+    width: 48%;
+    float: left;
+    margin-left: 150px;
+    margin-top: 80px;
+}
+
+.texto p {
+    width: 40%;
+    float: left;
+    margin-left: 80px;
+    margin-top: 88px;
+    font-size: 22px;
+    text-align: justify;
+    color: #fff;
+}
+
+
+/*missão visão valores*/
+
+.MVV{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    background:  #000200;;
+}
+
+.container .card {
+    display: inline-block;
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-bottom: 7em;
+}
+
+.container .card:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #f78620;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.container .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+
+}
+
+.container .card1:after {
+    content: 'Missão';
+    position: absolute;
+    top: 50%;
+    left: -20;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.04)
+}
+
+.container .card2:after {
+    content: 'Visão';
+    position: absolute;
+    top: 50%;
+    left: 25px;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.04)
+}
+
+.container .card3:after {
+    content: 'Valores';
+    position: absolute;
+    top: 50%;
+    left: -20px;
+    font-size: 6em;
+    font-weight: 800;
+    font-style: italic;
+    color:rgba(255, 255, 255, 0.04)
+}
+
+.container .card .imgBx {
+    position: absolute;
+    top:30%;
+    transform: translateY(-40%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.container .card:hover .imgBx {
+    top: 0%;
+    transform: translatY(0%);
+}
+ 
+.container .card .imgBx img {
+    position: absolute;
+    top: 90%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(15deg);
+    width: 270px;
+}
+
+
+.container .card .contentBx {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: 1s;
+    z-index: 10;
+}
+
+.container .card:hover .contentBx {
+    height: 210px;
+}
+
+.container .card .contentBx p {
+    position: relative;
+    letter-spacing: 1px;
+    color: #ffff; 
+    margin-top: 105px;
+    margin-left: 30px;
+    visibility: hidden;
+}
+
+.container .card:hover .contentBx p {
+    visibility: visible;
+}
+
+.container h2 {
+    width: 80%;
+    margin-bottom: 50px;
+    margin-top: 60px;
+    position: static;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 3em;
+    -webkit-text-stroke: 0.7px #fff;
+    text-transform: uppercase;
+}
+
+/*nossos serviços */
+
+.serviços {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+    background:  #000200;
+}
+
+.espaço {
+    position: relative;
+    max-width: 80%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 10px;
+}
+
+.espaço .box {
+    background: #333;
+    padding: 20px;
+    display: grid;
+    font-size: 20px;
+    place-items: center;
+    text-align: center;
+    color: #fff;
+    transition: 0.5s;
+}
+
+.espaço .box:hover{
+    background:  #f78620;
+}
+
+.espaço .box img{
+    position: relative;
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.espaço .box:nth-child(1){
+    grid-column: span 2;
+    grid-row: 1;
+}
+
+.nossosserviços h2 {
+    width: 100%;
+    background-color: #000200;
+    position: static;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 3em;
+    -webkit-text-stroke: 0.7px #fff;
+    text-transform: uppercase;
+}
+
+
+
+@media(max-width:800px) {
+    .logo {
+        width: 70%;
+        float: left;
+        margin-left: 5px;
+    }
+        
+    IMG.displayed {
+        margin-left: 6px;
+    }
+    .menu ul {
+        width: 100%;
+        list-style: none;
+        position: relative;
+    }
+
+    label[for="bt_menu"]{
+        display: block;
+    }
+
+    span{
+        display: inline-block;
+    }
+
+    .menu ul li{
+        width: 100%;
+        float: none;
+        border-left: none;
+    }
+
+    .menu ul ul{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+
+    .menu ul li:hover ul{
+        height: auto;
+        max-height: 200px;
+    }
+    
+    /* CSS padrão da div */
+    .menu {
+        margin-top: 100px;
+        margin-left: -100%;
+        transition: linear 0.4s;
+    }
+    
+    /* CSS quando o checkbox está marcado */
+    #bt_menu:checked ~ * .menu {
+        margin-left: 0;
+        transition: linear 0.4s;
+    }          
+
+    section h1{
+        font-weight: 900;
+        font-size: 8em;
+    }
+    
+    .texto p {
+        width: 80%;
+        font-size: 22px;
+        margin-left: 59px;
+        margin-top: 34px;
+    }
+
+    .apresentação{
+        width: 100%;
+        height: 1600px;
+        margin-right: 0em;
+    }
+
+    IMG.foto {
+        margin-left: 5px;
+    }
+
+    /*mvv*/
+
+    .container .card {
+        margin-left: 7em;
+        margin-top: 5px;
+        margin-bottom: 15px;
+    }
+}
