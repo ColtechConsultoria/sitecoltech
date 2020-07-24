@@ -348,9 +348,13 @@ nav.nav_tabs {
     text-align: center;
 }
 
+.label {
+    transition: ease 5s;
+}
+
 .rd_tabs:checked ~ label{
     background-color: #f78620;
-    margin-top: 5px;
+    margin-top: -6px;
 }
 
 .rd_tabs{
@@ -373,6 +377,11 @@ nav.nav_tabs {
 .contentt article{
     padding: 10px;
     color: #fff;
+}
+
+
+.nav_tabs label img{
+    height: 50px;
 }
 
 /*nossos serviços */
@@ -556,4 +565,14 @@ nav.nav_tabs {
         width: 69px;
     }
 
+    .nav_tabs label img{
+        height: 40px !important;
+    }
+
+    .nav_tabs label p{
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 11px;
+        margin-top: 10px;
+    }
 }
