@@ -543,7 +543,7 @@ nav.nav_tabs {
     }
 
     .sobrenós{
-        margin-left: 2%;
+        margin-left: 11%;
     }
 
     .nav_tabs label{
@@ -574,4 +574,9 @@ nav.nav_tabs {
         font-size: 12px;
         margin-top: 8px;
     }
+
+    .nossosserviços h2 {
+        margin-top: -650px !important;
+    }
+
 }
