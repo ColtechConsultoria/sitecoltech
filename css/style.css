@@ -1,4 +1,4 @@
-@import url ('https://fonts.googleapis.com/css2? family = Lato & display = swap');
+@import 'https://fonts.googleapis.com/css2? family = Lato & display = swap';
 
 /* família de fontes: 'Lato', sans-serif; */
 
@@ -37,7 +37,7 @@ section .star{
     top: 0;
     left: 0;
     width: 100%;
-    height: 90vh;
+    height: 100%;
     pointer-events: none;
     animation: animate 8s ease-in-out infinite,
                 backgroundmove 16s linear infinite;
@@ -140,7 +140,7 @@ IMG.displayed {
     margin-top: 5px;
     width: 100%;
     height: 48px;
-    background-color: #000200
+    background-color: #000200;
     font-family: 'Lato', sans-serif, Helvetica, sans-serif;
 }
 
@@ -345,230 +345,88 @@ span{
     filter: blur(10px);
 }
 
-/* Quem somos */
+/* Apresentação */
 
 .apresentação{
     width: 100%;
-    height: 1900px;
+    height: 1000px;
     background-color: #000200;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
 }
-
 .titulo h2{
-    width: 80%;
+    width: 100%;
+    background-color: #000200;
+    position: static;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 3em;
+    -webkit-text-stroke: 0.7px #fff;
+    text-transform: uppercase;
+}
+
+.sobrenós{
+    background-color: #000200;
+    font-family: 'Lato', sans-serif;
+    margin-left: 17%;
+    margin-right: auto;
+}
+
+nav.nav_tabs {
     margin-left: auto;
     margin-right: auto;
-    position: static;
-    color: transparent;
-    font-weight: 1000;
-    font-size: 3em;
-    -webkit-text-stroke: 0.7px #fff;
-    text-transform: uppercase;
 }
 
-.fotoshistória{
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-
-.slideshow{
-    position: relative;
-    width: 400px;
-    height: 400px;
-    transform-style: preserve-3d;
-    perspective: 1000px;
-}
-
-.slideshow .slide{
-    position: absolute;
-    top:0px;
-    left: 0px;
-    right: 0;
-    bottom: 0;
-    animation: animatte 15s linear infinite;
-    transform: rotateY(90deg);
-}
-
-.slideshow .slide img{
-    position: absolute;
-    top: 0;
-    left: 0;
-    object-fit: cover;
-    transform: rotateY(180deg);
-}
-
-.slideshow .slide:nth-child(1){
-    animation-delay: 0s;
-}
-.slideshow .slide:nth-child(2){
-    animation-delay: 1.5s;
-}
-.slideshow .slide:nth-child(3){
-    animation-delay: 3s;
-}
-
-
-@keyframes animatte{
-    0%{
-        transform: rotateY(90deg);
-    }
-    10%, 100%{
-        transform: rotateY(270deg);
-    }
-}
-
-.texto p {
-    width: 40%;
-    float: left;
-    margin-left: 80px;
-    margin-top: 88px;
-    font-size: 22px;
-    text-align: justify;
-    color: gray;
-}
-
-
-/*missão visão valores*/
-
-.MVV{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 80vh;
-    background:  #000200;;
-}
-
-.container .card {
-    display: inline-block;
-    position: relative;
-    width: 320px;
-    height: 450px;
-    background: #232323;
-    border-radius: 20px;
-    overflow: hidden;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 7em;
-}
-
-.container .card:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #f78620;
-    clip-path: circle(150px at 80% 20%);
-    transition: 0.5s ease-in-out;
-}
-
-.container .card:hover:before {
-    clip-path: circle(300px at 80% -20%);
-
-}
-
-.container .card1:after {
-    content: 'Missão';
-    position: absolute;
-    top: 50%;
-    left: -20;
-    font-size: 6em;
-    font-weight: 800;
-    font-style: italic;
-    color:rgba(255, 255, 255, 0.04)
-}
-
-.container .card2:after {
-    content: 'Visão';
-    position: absolute;
-    top: 50%;
-    left: 25px;
-    font-size: 6em;
-    font-weight: 800;
-    font-style: italic;
-    color:rgba(255, 255, 255, 0.04)
-}
-
-.container .card3:after {
-    content: 'Valores';
-    position: absolute;
-    top: 50%;
-    left: -20px;
-    font-size: 6em;
-    font-weight: 800;
-    font-style: italic;
-    color:rgba(255, 255, 255, 0.04)
-}
-
-.container .card .imgBx {
-    position: absolute;
-    top:30%;
-    transform: translateY(-40%);
-    z-index: 10000;
-    width: 100%;
-    height: 220px;
-    transition: 0.5s;
-}
-
-.container .card:hover .imgBx {
-    top: 0%;
-    transform: translatY(20%);
-}
- 
-.container .card .imgBx img {
-    position: absolute;
-    top: 90%;
-    left: 50%;
-    transform: translate(-50%, -70%) rotate(0deg);
-    width: 270px;
-}
-
-
-.container .card .contentBx {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 100%;
-    text-align: 1s;
-    z-index: 10;
-}
-
-.container .card:hover .contentBx {
-    height: 210px;
-}
-
-.container .card .contentBx p {
-    position: relative;
-    letter-spacing: 1px;
-    color: #ffff; 
-    margin-top: 105px;
-    margin-left: 30px;
-    visibility: hidden;
-}
-
-.container .card:hover .contentBx p {
-    visibility: visible;
-}
-
-.container h2 {
+.nav_tabs{
     width: 80%;
-    margin-bottom: 50px;
-    margin-top: 60px;
-    position: static;
-    color: transparent;
-    font-weight: 1000;
-    font-size: 3em;
-    -webkit-text-stroke: 0.7px #fff;
-    text-transform: uppercase;
+    background-color: #fff;
+    position: relative;
+}
+
+.nav_tabs ul{
+    margin-top: 20px;
+    list-style: none;
+}
+
+.nav_tabs ul li{
+    float: left;
+}
+
+.nav_tabs label{
+    padding: 25px;
+    width: 100%;
+    background-color: #363b48;
+    display: block;
+    color: #fff; /*tab123*/
+    cursor: pointer;
+    text-align: center;
+}
+
+.rd_tabs:checked ~ label{
+    background-color: #e54e43;
+}
+
+.rd_tabs{
+    display: none;
+}
+
+.contentt{
+    border-top: 5px solid #e54e43;
+    display: none;
+    position: absolute;
+    height: 320px;
+    width: 600px;
+    left: 0;
+}
+
+.rd_tabs:checked ~ .contentt{
+    display: block;
+}
+
+.contentt article{
+    padding: 10px;
+    color: #fff;
 }
 
 /*nossos serviços */
@@ -613,10 +471,6 @@ span{
     margin-bottom: 10px;
 }
 
-.espaço .box:nth-child(1){
-    grid-column: span 2;
-    grid-row: 1;
-}
 
 .nossosserviços h2 {
     width: 100%;
@@ -689,7 +543,7 @@ span{
 
     section h1{
         font-weight: 900;
-        font-size: 8em;
+        font-size: 5em;
     }
     
     .texto p {
@@ -699,21 +553,34 @@ span{
         margin-top: 34px;
     }
 
+    /*apresentando a coltech*/
+
     .apresentação{
         width: 100%;
-        height: 1600px;
+        height: 1100px;
         margin-right: 0em;
     }
 
-    IMG.foto {
-        margin-left: 5px;
+    .contentt{
+        width: 304px;
     }
 
-    /*mvv*/
+    .sobrenós{
+        margin-left: 0%;
+        
+    }
 
-    .container .card {
-        margin-left: 7em;
-        margin-top: 5px;
-        margin-bottom: 15px;
+    .nav_tabs label{
+        padding: 19px;
+    }
+
+    .titulo h2{
+        font-size: 2em;
+        -webkit-text-stroke: 0.3px #fff;
+    }
+
+    .nossosserviços h2 {
+        font-size: 2em;
+        -webkit-text-stroke: 0.3px #fff;
     }
 }
