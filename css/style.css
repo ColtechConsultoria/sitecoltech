@@ -313,8 +313,8 @@ span{
 
 .sobrenós{
     background-color: #000200;
+    margin-left: 12%;
     font-family: 'Lato', sans-serif;
-    margin-left: 19%;
     margin-right: auto;
 
 }
@@ -340,7 +340,7 @@ nav.nav_tabs {
 }
 
 .nav_tabs label{
-    padding: 25px;
+    padding: 8px;
     width: 150px;
     background-color: #363b48;
     display: block;
