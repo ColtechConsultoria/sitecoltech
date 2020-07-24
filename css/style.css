@@ -313,14 +313,15 @@ span{
 
 .sobrenós{
     background-color: #000200;
-    margin-left: 17%;
-    margin-bottom: 50px;
+    margin-left: 25%;
+    margin-bottom: 100px;
     font-family: 'Lato', sans-serif;
     margin-right: auto;
 
 }
 
 nav.nav_tabs {
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
