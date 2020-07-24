@@ -543,9 +543,7 @@ nav.nav_tabs {
     }
 
     .sobrenós{
-        margin-left: 2%;
-
-        
+        margin-left: 0%;
     }
 
     .nav_tabs label{
@@ -573,7 +571,7 @@ nav.nav_tabs {
     .nav_tabs label p{
         margin-left: auto;
         margin-right: auto;
-        font-size: 11px;
-        margin-top: 10px;
+        font-size: 12px;
+        margin-top: 8px;
     }
 }
