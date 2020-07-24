@@ -288,63 +288,7 @@ span{
     padding: 3% 4%;
     background: url(../img/banner.png) no-repeat fixed;
 }
-/* Scroll Progress */
 
-::-webkit-scrollbar {
-    width: 0;
-}
-
-#scrollpath{
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    background: rgba(255, 255, 255, 0.05);
-}
-
-#progressbar{
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 6px;
-    height: 100%;
-    background: linear-gradient(to top, #101e3f,#f78620);
-    animation: animatee 5s linear infinite;
-
-}
-
-@keyframes animatee {
-    0%, 100%
-    {
-        filter: hue-rotate(0deg)
-    }
-    50%
-    {
-        filter: hue-rotate(360deg)
-    }
-}
-
-#progressbar:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #101e3f,#f78620);
-    filter: blur(10px);
-}
-
-#progressbar:after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to top, #101e3f,#f78620);
-    filter: blur(10px);
-}
 
 /* Apresentação */
 
@@ -444,7 +388,7 @@ nav.nav_tabs {
     position: relative;
     max-width: 80%;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-template-rows: minmax(100px, auto);
     margin: 40px;
     grid-auto-flow: dense;
@@ -472,6 +416,25 @@ nav.nav_tabs {
     margin-bottom: 10px;
 }
 
+.content h2{
+    width: 100%;
+    position: static;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 1em;
+    -webkit-text-stroke: 0.4px #fff;
+    text-transform: uppercase;
+}
+
+.content p{
+    width: 100%;
+    position: static;
+    color: transparent;
+    font-size: 0.8em;
+    text-align: center;
+    color: #fff;
+    margin-top: 5px;
+}
 
 .nossosserviços h2 {
     width: 100%;
