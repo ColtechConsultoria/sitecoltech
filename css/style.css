@@ -316,6 +316,7 @@ span{
     font-family: 'Lato', sans-serif;
     margin-left: 17%;
     margin-right: auto;
+
 }
 
 nav.nav_tabs {
@@ -524,14 +525,16 @@ nav.nav_tabs {
         width: 100%;
         height: 1600px;
         margin-right: 0em;
+        margin-bottom: 80px;
     }
 
     .contentt{
-        width: 304px;
+        width: 276px;
     }
 
     .sobrenós{
-        margin-left: 0%;
+        margin-left: 2%;
+
         
     }
 
@@ -550,7 +553,7 @@ nav.nav_tabs {
     }
 
     .nav_tabs label{
-        width: 76px;
+        width: 69px;
     }
 
 }
