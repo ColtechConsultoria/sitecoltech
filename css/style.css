@@ -342,7 +342,6 @@ nav.nav_tabs {
 .nav_tabs label{
     padding: 8px;
     width: 150px;
-    background-color: #363b48;
     display: block;
     color: #fff; /*tab123*/
     cursor: pointer;
@@ -350,7 +349,8 @@ nav.nav_tabs {
 }
 
 .rd_tabs:checked ~ label{
-    background-color: #e54e43;
+    background-color: #f78620;
+    margin-top: 5px;
 }
 
 .rd_tabs{
@@ -358,7 +358,7 @@ nav.nav_tabs {
 }
 
 .contentt{
-    border-top: 5px solid #e54e43;
+    border-top: 5px solid #f78620;
     display: none;
     position: absolute;
     height: 320px;
