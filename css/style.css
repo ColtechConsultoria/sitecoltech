@@ -311,24 +311,16 @@ span{
 
 .sobrenós{
     background-color: #000200;
-    margin-left: 27%;
     font-family: 'Lato', sans-serif;
-    margin-right: auto;
-
+    position: relative;
+    width: 100%;   
 }
 
-nav.nav_tabs {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .nav_tabs{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    background-color: #fff;
-    position: relative;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
 
 .nav_tabs ul{
@@ -342,7 +334,7 @@ nav.nav_tabs {
 
 .nav_tabs label{
     padding: 8px;
-    width: 150px;
+    width: 134px;
     display: block;
     color: #fff; /*tab123*/
     cursor: pointer;
@@ -367,7 +359,7 @@ nav.nav_tabs {
     display: none;
     position: absolute;
     height: 320px;
-    width: 600px;
+    width: 536px;
     left: 0;
 }
 
@@ -519,7 +511,7 @@ nav.nav_tabs {
 
     section h1{
         font-weight: 900;
-        font-size: 5em;
+        font-size: 4em;
     }
     
     .texto p {
@@ -534,20 +526,21 @@ nav.nav_tabs {
     .apresentação{
         width: 100%;
         height: 1800px;
-        margin-right: 0em;
         margin-bottom: 140px;
     }
 
     .contentt{
-        width: 276px;
-    }
-
-    .sobrenós{
-        margin-left: 14%;
+        width: 292px;
     }
 
     .nav_tabs label{
-        padding: 19px;
+        padding: 20px;
+    }
+
+    .nav_tabs {
+        transform: translateX(10%);
+        position: 0;
+        left: 0;
     }
 
     .titulo h2{
@@ -561,7 +554,7 @@ nav.nav_tabs {
     }
 
     .nav_tabs label{
-        width: 69px;
+        width: 73px;
     }
 
     .nav_tabs label img{
@@ -571,8 +564,9 @@ nav.nav_tabs {
     .nav_tabs label p{
         margin-left: auto;
         margin-right: auto;
-        font-size: 12px;
+        font-size: 13px;
         margin-top: 8px;
+        font-weight: bolder;
     }
 
     .nossosserviços h2 {
@@ -581,52 +575,28 @@ nav.nav_tabs {
 
 }
 
-
-
-@media(min-width:481px) and (max-width:767px){
-
-    .section h1{
-        font-weight: 600;
-        font-size: 3em;
-    }
-
-    .apresentação{
-        width: 100%;
-        height: 2080px;
-    }
-
-    .nossosserviços h2 {
-        margin-top: -770px !important;
-    }
-
-    .contentt{
-        width: 500px;
-    }
-
-    .nav_tabs label{
-        width: 125px;
-    }
-
-    .sobrenós{
-        margin-left: 17%;
-    }
-
-}
-
 @media(min-width:768px) and (max-width:1024px){
 
-    .section h1{
-        font-weight: 700;
-        font-size: 3em;
+    section h1{
+        font-weight: 900;
+        font-size: 7em;
     }
 
+    .nav_tabs {
+        transform: translateX(25%);
+        position: 0;
+        left: 0;
+    }
+
+    
     .apresentação{
         width: 100%;
         height: 2080px;
+        margin-bottom: 100px
     }
 
     .nossosserviços h2 {
-        margin-top: -500px !important;
+        margin-top: -710px !important;
     }
 
     .contentt{
@@ -635,10 +605,6 @@ nav.nav_tabs {
 
     .nav_tabs label{
         width: 125px;
-    }
-
-    .sobrenós{
-        margin-left: 25%;
     }
 
 }
