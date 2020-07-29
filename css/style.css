@@ -20,7 +20,7 @@ body { overflow-x: hidden; }
 section {
     position: relative;
     width: 100%;
-    height: 80vh;
+    height: 100vh;
     overflow: hidden;
     background-color: #000200;
     display: flex;
@@ -33,7 +33,7 @@ section h1{
     position: static;
     color: transparent;
     font-weight: 900;
-    font-size: 12em;
+    font-size: 8em;
     -webkit-text-stroke: 2px #fff;
     text-transform: uppercase;
 }
@@ -123,6 +123,8 @@ section .star.star8{
     font-size: 0px;
     margin-top: 16px;
     margin-bottom: 27px;
+    position: relative;
+    margin-top: -98vh;
 }
 
 IMG.displayed {
@@ -134,7 +136,6 @@ IMG.displayed {
 .cabecalho {
     width: 100%;
     float: left;
-    background-color: #000200
 }
 
 .menuu{
@@ -146,7 +147,6 @@ IMG.displayed {
     margin-top: 5px;
     width: 100%;
     height: 48px;
-    background-color: #000200;
     font-family: 'Lato', sans-serif, Helvetica, sans-serif;
 }
 
@@ -170,34 +170,18 @@ IMG.displayed {
     text-decoration: none;
     text-align: center;
     color: #fff;
-    font-size: 27px;
+    font-size: 20px;
 }
 
-.menu ul ul {
-    width: 100%;
-    position: absolute;
-    visibility: hidden;
-}
-
-.menu ul li:hover ul{
-    position: relative;
-    visibility: visible;
-}
 
 .menu a:hover{
-    background-color: #f4f4f4;
-    color: #555;
-}
-
-.menu ul ul li{
     width: 100%;
+    margin-top: -7px;
     float: none;
-    border-bottom: solid 1px #ccc;
+    text-align: center;
+    color: orange;
 }
 
-.menu ul ul li a{
-    width: 100%;
-}
 
 label[for="bt_menu"] {
     padding: 5px;
@@ -207,59 +191,60 @@ label[for="bt_menu"] {
     text-align: center;
     font-size: 30px;
     cursor: pointer;
-    width: 65px;
-    height: 65px;
+    width: 49px;
+    height: 49px;
     border-radius: 15px ;
     transition: all .3s linear;
-    margin-top: 15px;
-    margin-left: -15px;
+    margin-left: -9px;
+    position: absolute;
+    margin-top: -97vh;
 }
 
-span {
+.tracin {
     float: right;
-    width: 35px;
-    height: 4px;
+    width: 28px;
+    height: 3.8px;
     position: absolute;
     background-color: #fff;
     transition: all .3s linear;
-    margin-top: 25px;
-    margin-left: -15px;
+    margin-top: 18px;
+    margin-left: -13px;
 }
 
 
-span:before {
+.tracin:before {
     content: '';
-    width: 35px;
-    height: 4px;
+    width: 28px;
+    height: 3.8px;
     bottom: -12px;
-    margin-left: -18px;
+    margin-left: -14px;
     position: absolute;
     background-color: #fff;
     transition: all .3 linear;
 }
 
-span:after {
+.tracin:after {
     content: '';
-    width: 35px;
-    height: 4px;
+    width: 28px;
+    height: 3.8px;
     top: -12px;
-    margin-left: -18px;
+    margin-left: -14px;
     position: absolute;
     background-color: #fff;
     transition: all .3 linear;
 }
 
-#bt_menu:checked ~ * span{
+#bt_menu:checked ~ * .tracin{
     background-color: transparent;
 }
 
-#bt_menu:checked ~ * span:before{
+#bt_menu:checked ~ * .tracin:before{
     transition: all .3 linear;
     transform: translate(0px, -12px) rotate(-45deg)
 
 }
 
-#bt_menu:checked ~ * span:after{
+#bt_menu:checked ~ * .tracin:after{
     transition: all .3 linear;
     transform: translate(0px, 12px) rotate(45deg)
 }
@@ -277,33 +262,18 @@ label[for="bt_menu"]{
     display: none;
 }
 
-span{
+.tracin{
     display: none;
 }
-
-.banner-img{
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.banner {
-    width: 100%;
-    float: left;
-    text-align: center;
-    padding: 3% 4%;
-    background: url(../img/banner.png) no-repeat fixed;
-}
-
 
 /* Apresentação */
 
 .apresentação{
-    width: 100%;
-    height: 1450px;
     background-color: #000200;
-    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
 }
+
 .titulo h2{
     width: 100%;
     background-color: #000200;
@@ -315,22 +285,15 @@ span{
     text-transform: uppercase;
 }
 
-.sobrenós{
-    background-color: #000200;
-    font-family: 'Lato', sans-serif;
-    position: relative;
-    width: 100%;   
-}
-
-
 .nav_tabs{
-    left: 50%;
-    position: absolute;
-    transform: translateX(-50%);
+    width: 600px;
+    height: 400px;
+    margin: 100px auto;
+    position: relative;
+    margin-top: 28em;
 }
 
 .nav_tabs ul{
-    margin-top: 20px;
     list-style: none;
 }
 
@@ -339,21 +302,17 @@ span{
 }
 
 .nav_tabs label{
-    padding: 8px;
-    width: 134px;
+    width: 150px;
+    padding: 9px;
+    background-color: ;
     display: block;
-    color: #fff; /*tab123*/
+    color: #fff;
     cursor: pointer;
     text-align: center;
 }
 
-.label {
-    transition: ease 5s;
-}
-
 .rd_tabs:checked ~ label{
-    background-color: #f78620;
-    margin-top: -6px;
+    background-color: #ff9f0c;
 }
 
 .rd_tabs{
@@ -361,27 +320,24 @@ span{
 }
 
 .contentt{
-    border-top: 5px solid #f78620;
+    border-top: 5px solid #ff9f0c;
+    background-color: transparent;
     display: none;
     position: absolute;
     height: 320px;
-    width: 536px;
-    left: 0;
+    width: 600px;
+    left: 0px;
+}
+
+.contentt article{
+    padding: 10px;
+    text-align: center;
 }
 
 .rd_tabs:checked ~ .contentt{
     display: block;
 }
 
-.contentt article{
-    padding: 10px;
-    color: #fff;
-}
-
-
-.nav_tabs label img{
-    height: 50px;
-}
 
 /*nossos serviços */
 
@@ -454,10 +410,8 @@ span{
     font-size: 3em;
     -webkit-text-stroke: 0.7px #fff;
     text-transform: uppercase;
-    margin-top: -500px;
+    margin-top: -160px;
 }
-
-
 
 @media(max-width:480px) {
     body { overflow-x: hidden; }
@@ -465,6 +419,8 @@ span{
         width: 70%;
         float: left;
         margin-left: 5px;
+        position: relative;
+        
     }
         
     IMG.displayed {
@@ -474,27 +430,24 @@ span{
         width: 100%;
         list-style: none;
         position: relative;
+        margin-top: -105vh;
+
     }
+    
 
     label[for="bt_menu"]{
         display: block;
+
     }
 
-    span{
-        display: inline-block;
+    .tracin{
+        display: initial;
     }
 
     .menu ul li{
         width: 100%;
         float: none;
         border-left: none;
-    }
-
-    .menu ul ul{
-        position: static;
-        overflow: hidden;
-        max-height: 0;
-        transition: all .4s;
     }
 
     .menu ul li:hover ul{
@@ -517,7 +470,7 @@ span{
 
     section h1{
         font-weight: 900;
-        font-size: 4em;
+        font-size: 3em;
     }
     
     .texto p {
@@ -527,90 +480,17 @@ span{
         margin-top: 34px;
     }
 
-    /*apresentando a coltech*/
+    /*Apresentação*/
 
-    .apresentação{
-        width: 100%;
-        height: 1800px;
-        margin-bottom: 140px;
-    }
 
-    .contentt{
-        width: 292px;
-    }
-
-    .nav_tabs label{
-        padding: 20px;
-    }
-
-    .nav_tabs {
-        transform: translateX(10%);
-        position: 0;
-        left: 0;
-    }
-
-    .titulo h2{
-        font-size: 2em;
-        -webkit-text-stroke: 0.3px #fff;
-    }
-
-    .nossosserviços h2 {
-        font-size: 2em;
-        -webkit-text-stroke: 0.3px #fff;
-    }
-
-    .nav_tabs label{
-        width: 73px;
-    }
-
-    .nav_tabs label img{
-        height: 40px !important;
-    }
-
-    .nav_tabs label p{
-        margin-left: auto;
-        margin-right: auto;
-        font-size: 13px;
-        margin-top: 8px;
-        font-weight: bolder;
-    }
-
-    .nossosserviços h2 {
-        margin-top: -600px !important;
-    }
 
 }
 
-@media(min-width:768px) and (max-width:1024px){
+@media(min-width:481px) and (max-width:1024px){
 
     section h1{
         font-weight: 900;
-        font-size: 7em;
-    }
-
-    .nav_tabs {
-        transform: translateX(25%);
-        position: 0;
-        left: 0;
-    }
-
-    
-    .apresentação{
-        width: 100%;
-        height: 2080px;
-        margin-bottom: 100px
-    }
-
-    .nossosserviços h2 {
-        margin-top: -710px !important;
-    }
-
-    .contentt{
-        width: 500px;
-    }
-
-    .nav_tabs label{
-        width: 125px;
+        font-size: 4em;
     }
 
 }
