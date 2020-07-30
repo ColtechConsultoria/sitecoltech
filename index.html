@@ -5,11 +5,16 @@
 	<title>coltech consultoria</title>
     <meta name="viewport" content="width=, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/> 
+    <link rel="stylesheet" href="https:// maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
 </head>
 <style>
 *{
-    margin: 0;
+    margin: 0; 
     padding: 0;
 }
 </style>
@@ -17,7 +22,7 @@
 <body>
     <header class="cabecalho">
         <div class="estrelas">
-            <section>
+            <section class="estrelinhas">
                 <div class="star star1"></div>
                 <div class="star star2"></div>
                 <div class="star star3"></div>
@@ -47,11 +52,11 @@
             </nav>
         </div>
         <div class="apresentação">
-            <div class="titulo">
-                <h2>apresentação</h2>
-            </div>
             <div class="sobrenós">
                 <nav class="nav_tabs">
+                    <div class="titulo" style="margin-top: -4em;">
+                        <h2>apresentação</h2>
+                    </div>
                     <ul>
                         <li>
                             <input type="radio" name="tabs" class="rd_tabs" id="tab1" checked>
@@ -95,91 +100,193 @@
                         </li>
                     </ul>
                 </nav>
-                <center>
-                    <div class="nossosserviços" style="margin-top: 16em;">
-                        <h2>Nossos Serviços</h2>
+            <div>   
+        </div>
+    </header>
+    <head>
+        <center>
+            <div class="nossosserviços">
+                <h2>Nossos Serviços</h2>
+            </div>
+        </center>
+        <div class="serviços">
+            <div class="espaço">
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/site.png" alt="" style="width: 100px;">
+                        <h2>site</h2>
+                        <p>Desenvolvimento de páginas personalizadas em uma plataforma online.</p>
                     </div>
-                </center>
-                <div class="serviços">
-                    <div class="espaço">
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/site.png" alt="" style="width: 100px;">
-                                <h2>site</h2>
-                                <p>Desenvolvimento de páginas personalizadas em uma plataforma online.</p>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/app.png" alt="" style="width: 100px;">
+                        <h2>Aplicativos</h2>
+                        <p>desenvolvimento de aplicativo acoplando diversos sistemas e funcionalidades.</p>                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/chatbot.png" alt="" style="width: 100px;">
+                        <h2>Chatbot</h2>
+                        <p>ferramenta de atendimento inteligente para whatsapp web.</p>
+                    </div>
+                </div>
+                    <div class="box">
+                    <div class="content">
+                        <img src="./img/E-commerce.png" alt="" style="width: 100px;">
+                        <h2>E-commerce</h2>
+                        <p>loja online para venda de produtos ou serviços, com páginas personalizadas.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/instalações.png" alt="" style="width: 100px;">
+                        <h2>Instalações elétricas</h2>
+                        <p>desenvolvimento ou adequação de plantas elétricas de acordo com as Normas Regulamentadoras</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/analise tarifária.png" alt="" style="width: 100px;">
+                        <h2>Análise tarifária</h2>
+                        <p>serviço voltado para análise de consumo de energia elétrica, visando estudar a veracidade nos valores da fatura.</p>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/pmoc.png" alt="" style="width: 100px;">
+                        <h2>PMOC</h2>
+                        <p>serviço voltado para a regularização de sistemas de climatização.</p>  
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/desenho.png" alt="" style="width: 100px;">
+                        <h2>Desenhos mecânicos</h2>
+                        <p> serviço voltado para construção de desenhos em 3D como peças ou produtos.</p>    
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="content">
+                        <img src="./img/projeto de produto.png" alt="" style="width: 100px;">
+                        <h2>Projeto de produto</h2>
+                        <p>criação de projeto de produto, com indicação de materiais e orçamentos.</p>    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </head>
+    <section class="membros">
+        <center>
+            <div class="nossosmembros">
+                <h2>Nossos membros</h2>
+            </div>
+        </center>
+        <div class="demo">
+            <div class="container">
+                <div class="row">
+                    <div id="testimonial-slider" class="owl-carousel">
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="./img/ursula.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ursula</h3>
+                                <span class="post">Gerente</span>
+                                <p class="description"> Time de Engenharia mecânica</p>
                             </div>
                         </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/app.png" alt="" style="width: 100px;">
-                                <h2>Aplicativos</h2>
-                                <p>desenvolvimento de aplicativo acoplando diversos sistemas e funcionalidades.</p>                    </div>
-                        </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/chatbot.png" alt="" style="width: 100px;">
-                                <h2>Chatbot</h2>
-                                <p>ferramenta de atendimento inteligente para whatsapp web.</p>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="./img/ursula.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ursula</h3>
+                                <span class="post">Gerente</span>
+                                <p class="description"> Time de Engenharia mecânica</p>
                             </div>
                         </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/E-commerce.png" alt="" style="width: 100px;">
-                                <h2>E-commerce</h2>
-                                <p>loja online para venda de produtos ou serviços, com páginas personalizadas.</p>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="./img/ursula.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ursula</h3>
+                                <span class="post">Gerente</span>
+                                <p class="description"> Time de Engenharia mecânica</p>
                             </div>
                         </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/instalações.png" alt="" style="width: 100px;">
-                                <h2>Instalações elétricas</h2>
-                                <p>desenvolvimento ou adequação de plantas elétricas de acordo com as Normas Regulamentadoras</p>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="./img/ursula.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ursula</h3>
+                                <span class="post">Gerente</span>
+                                <p class="description"> Time de Engenharia mecânica</p>
                             </div>
                         </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/analise tarifária.png" alt="" style="width: 100px;">
-                                <h2>Análise tarifária</h2>
-                                <p>serviço voltado para análise de consumo de energia elétrica, visando estudar a veracidade nos valores da fatura.</p>
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="./img/ursula.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ursula</h3>
+                                <span class="post">Gerente</span>
+                                <p class="description"> Time de Engenharia mecânica</p>
                             </div>
                         </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/pmoc.png" alt="" style="width: 100px;">
-                                <h2>PMOC</h2>
-                                <p>serviço voltado para a regularização de sistemas de climatização.</p>  
+                        <div class="testimonial">
+                            <p class="description"> Treinne skdnadakmdnajkdbdjbnjabjhbn nasjbdnas</p>
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="./img/ursula.jpg" alt="" style="width: 150px;">
+                                </div>
+                                <h3 class="title">joana</h3>
+                                <span class="post">lalalalla</span>
                             </div>
                         </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/desenho.png" alt="" style="width: 100px;">
-                                <h2>Desenhos mecânicos</h2>
-                                <p> serviço voltado para construção de desenhos em 3D como peças ou produtos.</p>    
-                            </div>
-                        </div>
-                        <div class="box">
-                            <div class="content">
-                                <img src="./img/projeto de produto.png" alt="" style="width: 100px;">
-                                <h2>Projeto de produto</h2>
-                                <p>criação de projeto de produto, com indicação de materiais e orçamentos.</p>    
+                        <div class="testimonial">
+                            <div class="testimonial-content">
+                                <div class="pic">
+                                    <img src="./img/ursula.jpg" alt="">
+                                </div>
+                                <h3 class="title">Ursula</h3>
+                                <span class="post">Gerente</span>
+                                <p class="description"> Time de Engenharia mecânica</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="Contatos">
-                    <div class = "container">  
-                        <div class="contactinfo">
-                            <div>
-                                <h2>jdsksa</h2>
-                                <ul>
-            
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>    
-            </body>
+            </div>
         </div>
-    </header>
+    </section>
+    <section class="conteent">
+        <div>
+            <h3>Entre em contato</h3>
+            <form class="form" method="POST" action="./PHP/email.php">
+                <input class="field" name="name" placeholder="Nome">
+                <input class="field" name="email" placeholder="E-mail">
+                <textarea class="field" name="message" placeholder="Digite sua mensagem aqui"></textarea>
+                <input class="field" type="submit" value="Enviar">
+            </form>
+        </div>   
+    </section>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#testimonial-slider").owlCarousel({
+                items:4,
+                itemsDesktop:[1000,4],
+                itemsDesktopSmall:[979,2],
+                itemsTablet:[768,2],
+                itemsMobile:[650,1],
+                pagination:true,
+                autoPlay:true
+            })
+        });
+    </script>
+</body>
 
     

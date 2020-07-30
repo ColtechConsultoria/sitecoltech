@@ -17,7 +17,7 @@ body { overflow-x: hidden; }
 
 }
 
-section {
+.estrelinhas {
     position: relative;
     width: 100%;
     height: 100vh;
@@ -29,7 +29,7 @@ section {
 
 }
 
-section h1{
+.estrelinhas h1{
     position: static;
     color: transparent;
     font-weight: 900;
@@ -38,7 +38,7 @@ section h1{
     text-transform: uppercase;
 }
 
-section .star{
+.estrelinhas .star{
     position: absolute;
     top: 0;
     left: 0;
@@ -49,47 +49,47 @@ section .star{
                 backgroundmove 16s linear infinite;
 }
 
-section .star.star1{
+.estrelinhas .star.star1{
     animation-delay: 0s;
     background: url(../stars/star1.png);
 }
 
-section .star.star1{
+.estrelinhas .star.star1{
     animation-delay: -1s;
     background: url(../stars/star1.png);
 }
 
-section .star.star2{
+.estrelinhas .star.star2{
     animation-delay: -2s;
     background: url(../stars/star2.png);
 }
 
-section .star.star3{
+.estrelinhas .star.star3{
     animation-delay: -3s;
     background: url(../stars/star3.png);
 }
 
-section .star.star4{
+.estrelinhas .star.star4{
     animation-delay: -4s;
     background: url(../stars/star4.png);
 }
 
-section .star.star5{
+.estrelinhas .star.star5{
     animation-delay: -5s;
     background: url(../stars/star5.png);
 }
 
-section .star.star6{
+.estrelinhas .star.star6{
     animation-delay: -6s;
     background: url(../stars/star6.png);
 }
 
-section .star.star7{
+.estrelinhas .star.star7{
     animation-delay: -7s;
     background: url(../stars/star7.png);
 }
 
-section .star.star8{
+.estrelinhas .star.star8{
     animation-delay: -8s;
     background: url(../stars/star8.png);
 }
@@ -134,6 +134,7 @@ IMG.displayed {
 }
 
 .cabecalho {
+    margin-top: 23px;
     width: 100%;
     float: left;
 }
@@ -347,7 +348,8 @@ label[for="bt_menu"]{
     align-self: center;
     min-height: 100vh;
     background:  #000200;
-    margin-top: -33px
+    margin-top: -33px;
+    
 }
 
 .espaço {
@@ -418,12 +420,145 @@ label[for="bt_menu"]{
 }
 
 .nossosserviços{
-    margin-top: 5em !important;
+    margin-top: 8em !important;
+}
+
+/*nossos membros*/
+
+.nossosmembros h2 {
+    width: 100%;
+    background-color: #000200;
+    position: static;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 2em;
+    -webkit-text-stroke: 0.7px #fff;
+    text-transform: uppercase;
+    margin-bottom: -15px;
+    font-size: 2em;
+    text-align: center;
+    margin-top: 0px;
+}
+
+.membros{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #000200;
+}
+
+.testimonial{
+    text-align: center; 
+    padding: 30px 30px 50px;
+    margin: 0 25px 100px;
+    position: relative;
+}
+
+.testimonial .icon{
+    display: inline-block;
+    font-size: 80px;
+    color: #f28a0b;
+    margin-bottom: 20px;
+    opacity: 0.6;
+}
+
+.testimonial .testimonial-content{
+    width: 100%;
+    position: absolute;
+    left: 0;
+}
+
+
+.testimonial .pic img{
+    width: 90px;
+    height: 90px;
 }
     
+.testimonial .title{
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-transform: capitalize;
+}
+
+.testimonial .post{
+    display: block;
+    font-size: 15px;
+    color: orange;
+}
+
+.pic img{
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.testimonial-content p{
+    font-size: 15px;
+    color: white;
+    text-transform: capitalize;
+    margin: 0 0 5px 0;
+}
+
+.pic img{
+    border-radius: 20px;
+}
+
+.description{
+    margin-bottom: 3em;
+}
+
+/*Formulario*/
+.conteent{
+    display: flex;
+    justify-content: center;
+    background-color: #000200;
+}
+
+
+
+.conteent h3{
+    margin-bottom: 18px;
+    width: 100%;
+    background-color: #000200;
+    position: relative;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 2em;
+    -webkit-text-stroke: 0.7px #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 1.5em;
+
+}
+
+.contato{
+    width: 100%; 
+    max-width: 50px;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.field{
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid orange;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.textarea{
+    height: 150px;
+}
 
 @media(max-width:480px) {
     body { overflow-x: hidden; }
+
+    .cabecalho {
+        margin-top: 0px;
+    }
+
     .logo {
         width: 70%;
         float: left;
@@ -491,6 +626,7 @@ label[for="bt_menu"]{
     /*Apresentação*/
     .nav_tabs {
         width: 300px;
+        height: 36pc;
     }
 
     .nav_tabs label {
@@ -506,10 +642,22 @@ label[for="bt_menu"]{
         width: 300px;
     }
     
+    .nav_tabs ul li {
+        margin-top: -50px;
+    }
+    
+
+
     /*nossos serviços*/
     .nossosserviços{
-        margin-top: 16em !important;
+        margin-top: 10em !important;
     }
+
+    /*membros*/
+    .testimonial{
+        margin: 0 40px 100px;
+    }
+    
 
 
 }
