@@ -611,7 +611,7 @@ label[for="bt_menu"]{
         transition: linear 0.4s;
     }          
 
-    section h1{
+    .estrelinhas h1{
         font-weight: 900;
         font-size: 3.5em;
     }
@@ -664,7 +664,7 @@ label[for="bt_menu"]{
 
 @media(min-width:481px) and (max-width:1024px){
 
-    section h1{
+    .estrelinhas h1{
         font-weight: 900;
         font-size: 6em;
     }
