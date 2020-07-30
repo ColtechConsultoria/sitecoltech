@@ -267,30 +267,30 @@ label[for="bt_menu"]{
 }
 
 /* Apresentação */
-
+.titulo h2{
+    margin-bottom: 18px;
+    width: 100%;
+    background-color: #000200;
+    position: relative;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 2em;
+    -webkit-text-stroke: 0.7px #fff;
+    text-transform: uppercase;
+    text-align: center;
+}
 .apresentação{
     background-color: #000200;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-}
-
-.titulo h2{
-    width: 100%;
-    background-color: #000200;
-    position: static;
-    color: transparent;
-    font-weight: 1000;
-    font-size: 3em;
-    -webkit-text-stroke: 0.7px #fff;
-    text-transform: uppercase;
+    margin-top: 30em;
 }
 
 .nav_tabs{
     width: 600px;
     height: 400px;
-    margin: 100px auto;
+    margin: auto;
     position: relative;
-    margin-top: 28em;
 }
 
 .nav_tabs ul{
@@ -304,7 +304,6 @@ label[for="bt_menu"]{
 .nav_tabs label{
     width: 150px;
     padding: 9px;
-    background-color: ;
     display: block;
     color: #fff;
     cursor: pointer;
@@ -327,6 +326,7 @@ label[for="bt_menu"]{
     height: 320px;
     width: 600px;
     left: 0px;
+    margin-top: 10px;
 }
 
 .contentt article{
@@ -347,6 +347,7 @@ label[for="bt_menu"]{
     align-self: center;
     min-height: 100vh;
     background:  #000200;
+    margin-top: -33px
 }
 
 .espaço {
@@ -407,11 +408,19 @@ label[for="bt_menu"]{
     position: static;
     color: transparent;
     font-weight: 1000;
-    font-size: 3em;
+    font-size: 2em;
     -webkit-text-stroke: 0.7px #fff;
     text-transform: uppercase;
+    margin-bottom: 18px;
+    font-size: 2em;
+    text-align: center;
     margin-top: -160px;
 }
+
+.nossosserviços{
+    margin-top: 5em !important;
+}
+    
 
 @media(max-width:480px) {
     body { overflow-x: hidden; }
@@ -433,7 +442,6 @@ label[for="bt_menu"]{
         margin-top: -105vh;
 
     }
-    
 
     label[for="bt_menu"]{
         display: block;
@@ -470,7 +478,7 @@ label[for="bt_menu"]{
 
     section h1{
         font-weight: 900;
-        font-size: 3em;
+        font-size: 3.5em;
     }
     
     .texto p {
@@ -481,7 +489,27 @@ label[for="bt_menu"]{
     }
 
     /*Apresentação*/
+    .nav_tabs {
+        width: 300px;
+    }
 
+    .nav_tabs label {
+        width: 75px;
+    }
+
+    .contentt {
+        width: auto;
+    }
+
+    .contentt{
+        margin-top: 10px;
+        width: 300px;
+    }
+    
+    /*nossos serviços*/
+    .nossosserviços{
+        margin-top: 16em !important;
+    }
 
 
 }
@@ -490,7 +518,7 @@ label[for="bt_menu"]{
 
     section h1{
         font-weight: 900;
-        font-size: 4em;
+        font-size: 6em;
     }
 
 }
