@@ -303,7 +303,7 @@ label[for="bt_menu"]{
 
 .nav_tabs ul li {
     float: left;
-    margin-top: -58px !important;
+    margin-top: 0px !important;
 }
 
 .nav_tabs label{
