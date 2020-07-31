@@ -301,8 +301,9 @@ label[for="bt_menu"]{
     list-style: none;
 }
 
-.nav_tabs ul li{
+.nav_tabs ul li {
     float: left;
+    margin-top: -58px;
 }
 
 .nav_tabs label{
@@ -563,7 +564,7 @@ label[for="bt_menu"]{
     }
 
     .titulo {
-        margin-top: 40em;
+        margin-top: 40em !important;
     }
 
     .cabecalho {
