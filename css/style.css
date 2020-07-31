@@ -506,8 +506,10 @@ label[for="bt_menu"]{
 }
 
 .description{
-    margin-bottom: 3em;
+    margin-bottom: 7em;
 }
+
+
 
 /*Formulario*/
 .conteent{
@@ -515,8 +517,6 @@ label[for="bt_menu"]{
     justify-content: center;
     background-color: #000200;
 }
-
-
 
 .conteent h3{
     margin-bottom: 18px;
