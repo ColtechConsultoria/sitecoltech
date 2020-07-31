@@ -268,8 +268,10 @@ label[for="bt_menu"]{
 }
 
 /* Apresentação */
+
+
 .titulo h2{
-    margin-bottom: 80px;
+    margin-bottom: 18px;
     width: 100%;
     background-color: #000200;
     position: relative;
@@ -280,6 +282,7 @@ label[for="bt_menu"]{
     text-transform: uppercase;
     text-align: center;
 }
+
 .apresentação{
     background-color: #000200;
     font-family: Arial, Helvetica, sans-serif;
@@ -554,6 +557,14 @@ label[for="bt_menu"]{
 
 @media(max-width:480px) {
     body { overflow-x: hidden; }
+
+    .titulo h2{
+        margin-bottom: 80px;
+    }
+
+    .titulo {
+        margin-top: 40em;
+    }
 
     .cabecalho {
         margin-top: 0px;
