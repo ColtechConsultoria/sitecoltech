@@ -655,7 +655,7 @@ label[for="bt_menu"]{
     }
     
     .nav_tabs ul li {
-        margin-top: -50px;
+        margin-top: -55px !important;
     }
     
 
@@ -679,6 +679,8 @@ label[for="bt_menu"]{
     .estrelinhas h1{
         font-weight: 900;
         font-size: 6em;
+        margin-top: -5em;
+
     }
 
 }
