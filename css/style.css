@@ -649,7 +649,7 @@ label[for="bt_menu"]{
 
 .informações .contactinfo .box .text h3{
     font-weight: 500;
-    color: #00bcd4;
+    color: orange;
 }
 
 
@@ -657,7 +657,7 @@ label[for="bt_menu"]{
     width: 30%;
     padding: 20px;
     height: 20em;
-    background: rgba(0, 0, 0, 0.884);
+    background: rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: center;
 }
@@ -689,7 +689,7 @@ label[for="bt_menu"]{
     border-bottom: 1px solid orange;
     outline: none;
     resize: none;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.07);
 }
 
 
