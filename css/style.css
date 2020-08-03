@@ -9,20 +9,75 @@
 
 }
 
-body { overflow-x: hidden; background-color: #000200;}
+body { overflow-x: hidden; background-color: #101e3f;}
 .estrelas{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 
 }
+/*subtitulo*/
 
+/*
+.empresajr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 6vh;
+}
+
+.line{
+    border-right: 2px solid orange;
+    color: orange;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+
+@keyframes blinkCursor{
+    from {
+        border-right-color: orange);
+    }
+    to{
+        border-right-color: transparent;
+    }
+}
+
+.typing-animation{
+    animation: blinkCursor 500ms steps(40) infinite normal, 
+    typing 3s steps(60) 1s normal both;
+}
+
+@keyframes typing{
+    from{
+        width: 0em;
+    }
+    to{
+        width: 27em;
+    }
+}
+*/
+
+.line{
+    color: orange;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.3em;
+    text-align: center;
+    margin: 0 auto;
+}
+
+
+/*inicio*/
 .estrelinhas {
     position: relative;
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #000200;
+    background-color: #101e3f;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -273,7 +328,7 @@ label[for="bt_menu"]{
 .titulo h2{
     margin-bottom: 18px;
     width: 100%;
-    background-color: #000200;
+    background-color: #101e3f;
     position: relative;
     color: transparent;
     font-weight: 1000;
@@ -284,7 +339,7 @@ label[for="bt_menu"]{
 }
 
 .apresentação{
-    background-color: #000200;
+    background-color: #101e3f;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
     margin-top: 30em;
@@ -351,7 +406,7 @@ label[for="bt_menu"]{
     justify-content: center;
     align-self: center;
     min-height: 100vh;
-    background:  #000200;
+    background:  #101e3f;
     margin-top: -33px;
     
 }
@@ -368,7 +423,7 @@ label[for="bt_menu"]{
 }
 
 .espaço .box {
-    background: #333;
+    background: rgba(0, 0, 0, 0.7);
     padding: 20px;
     display: grid;
     font-size: 20px;
@@ -410,7 +465,7 @@ label[for="bt_menu"]{
 
 .nossosserviços h2 {
     width: 100%;
-    background-color: #000200;
+    background-color: #101e3f;
     position: static;
     color: transparent;
     font-weight: 1000;
@@ -512,16 +567,29 @@ label[for="bt_menu"]{
 
 
 /*Formulario*/
-.conteent{
+.entreemcontato{
+
+}
+
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #000200;
 }
 
-.conteent h3{
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+
+.contact .contate h2{
     margin-bottom: 18px;
     width: 100%;
-    background-color: #000200;
     position: relative;
     color: transparent;
     font-weight: 1000;
@@ -530,35 +598,146 @@ label[for="bt_menu"]{
     text-transform: uppercase;
     text-align: center;
     margin-top: 2.5em;
-
 }
 
-.contato{
-    width: 100%; 
-    max-width: 50px;
+.informações{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: 30px;
+    margin-top: 30px;
 }
 
-.form {
+.informações .contactinfo{
+    width: 50%;
     display: flex;
     flex-direction: column;
 }
 
-.field{
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid orange;
-    border-radius: 5px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+.informações .contactinfo .box{
+    position: relative;
+    padding: 20px 0;
+    display: flex;
 }
 
-.textarea{
-    height: 150px;
+.informações .contactinfo .box .icon{
+    min-width: 60px;
+    height: 60px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+    font-size: 22px;
+    color: black;
+    text-decoration: none;
 }
+
+.informações .contactinfo .box .icon:hover{
+    background: orange;
+    text-decoration: none;
+}
+
+.informações .contactinfo .box .text{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    color: #fff;
+    flex-direction: column;
+    font-weight: 300;
+}
+
+.informações .contactinfo .box .text h3{
+    font-weight: 500;
+    color: #00bcd4;
+}
+
+
+.contactform{
+    width: 30%;
+    padding: 20px;
+    height: 20em;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+}
+
+
+.contactform h2{
+    width: 100%;
+    position: static;
+    color: transparent;
+    font-weight: 1000;
+    font-size: 2em;
+    -webkit-text-stroke: 0.4px black;
+    text-transform: uppercase;
+}
+
+
+.contactform .inputbox{
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.contactform .inputbox input, .contactform .inputbox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #333;
+    outline: none;
+    resize: none;
+}
+
+
+.contactform .inputbox .spann{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666666;
+}
+
+.contactform .inputbox input:focus ~ .spann,
+.contactform .inputbox input:valid ~ .spann,
+.contactform .inputbox textarea:focus ~ .spann,
+.contactform .inputbox textarea:valid ~ .spann
+{
+    color: #e91e;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contactform .inputbox input[type="submit"]{
+    width: 100px;
+    background: #e91e;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 18px;
+}
+
+
 
 @media(max-width:480px) {
     body { overflow-x: hidden; }
 
+    .empresajr{
+        height: 15vh;
+    }
+
+    .line{
+        white-space: normal;
+        max-width: 250px;
+    }
+
+    
     .titulo h2{
         margin-bottom: 80px;
     }
@@ -669,9 +848,26 @@ label[for="bt_menu"]{
     .testimonial{
         margin: 0 40px 100px;
     }
+
+    /*contato*/
+    .contact{
+        padding: 50px;
+    }
+
+    .contate{
+        flex-direction: column;
+    }
+
+    .informações{
+        display: block;
+    }
+
+    .contactform{
+        width: 100%;
+        align-items: center;
+    }
+
     
-
-
 }
 
 @media(min-width:481px) and (max-width:1024px){
@@ -679,8 +875,28 @@ label[for="bt_menu"]{
     .estrelinhas h1{
         font-weight: 900;
         font-size: 6em;
-        margin-top: 0em;
+        margin-top: -2em;
 
     }
 
+    .line{
+        font-size: 16px;
+    }
+    
+    .contact{
+        padding: 50px;
+    }
+
+    .contate{
+        flex-direction: column;
+    }
+
+    .informações{
+        display: block;
+    }
+
+    .contactform{
+        width: 100%;
+        align-items: center;
+    }
 }
