@@ -9,7 +9,7 @@
 
 }
 
-body { overflow-x: hidden; background-color: #101e3f;}
+body { overflow-x: hidden; background-color: #000200;}
 .estrelas{
     margin: 0;
     padding: 0;
@@ -77,11 +77,15 @@ body { overflow-x: hidden; background-color: #101e3f;}
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    background-color: #101e3f;
     display: flex;
     justify-content: center;
     align-items: center;
-
+    background-image: url(../img/engrenagem.png);
+    background-size: 82%;
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position-y: -2em;
+    background-position-x: 19em;
 }
 
 .estrelinhas h1{
@@ -190,8 +194,7 @@ IMG.displayed {
 
 .cabecalho {
     margin-top: 23px;
-    width: 100%;
-    float: left;
+    width: 100%;  
 }
 
 .menuu{
@@ -728,6 +731,12 @@ label[for="bt_menu"]{
 
 @media(max-width:480px) {
     body { overflow-x: hidden; }
+
+    .estrelinhas {
+        background-size: 80%;
+        background-position-y: 17.4em;
+        background-position-x: 5em;
+    }
 
     .empresajr{
         height: 15vh;
