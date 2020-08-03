@@ -423,7 +423,7 @@ label[for="bt_menu"]{
 }
 
 .espaço .box {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     display: grid;
     font-size: 20px;
@@ -486,7 +486,7 @@ label[for="bt_menu"]{
 
 .nossosmembros h2 {
     width: 100%;
-    background-color: #000200;
+    background-color: #101e3f;;
     position: static;
     color: transparent;
     font-weight: 1000;
@@ -501,7 +501,7 @@ label[for="bt_menu"]{
 
 .membros{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000200;
+    background-color: #101e3f;;
 }
 
 .testimonial{
@@ -579,7 +579,7 @@ label[for="bt_menu"]{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: #000200;
+    background-color: #101e3f;
 }
 
 .contact .content{
@@ -657,7 +657,7 @@ label[for="bt_menu"]{
     width: 30%;
     padding: 20px;
     height: 20em;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.884);
     display: flex;
     justify-content: center;
 }
@@ -686,9 +686,10 @@ label[for="bt_menu"]{
     font-size: 16px;
     margin: 10px 0;
     border: none;
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid orange;
     outline: none;
     resize: none;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 
 
@@ -700,7 +701,7 @@ label[for="bt_menu"]{
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: #666666;
+    color: white;
 }
 
 .contactform .inputbox input:focus ~ .spann,
@@ -882,7 +883,7 @@ label[for="bt_menu"]{
     .line{
         font-size: 16px;
     }
-    
+
     .contact{
         padding: 50px;
     }
