@@ -882,6 +882,12 @@ label[for="bt_menu"]{
 
 @media(min-width:481px) and (max-width:1024px){
 
+    .estrelinhas {
+        background-size: 88%;
+        background-position-y: 12em;
+        background-position-x: 11em;
+    }
+
     .estrelinhas h1{
         font-weight: 900;
         font-size: 6em;
