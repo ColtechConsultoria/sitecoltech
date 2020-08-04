@@ -1026,7 +1026,7 @@ label[for="bt_menu"]{
     }
 
     .portifólios{
-        margin-top: -6em;
+        margin-top: 3em;
     }
 
     .portifólios .card {
@@ -1035,6 +1035,11 @@ label[for="bt_menu"]{
         margin: 11px;
     }
 
+    /*nossosserviços*/
+
+    .nossosserviços {
+        margin-top: 2em !important;
+    }
 
     .contact{
         padding: 50px;
