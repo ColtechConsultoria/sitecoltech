@@ -489,17 +489,16 @@ label[for="bt_menu"]{
 
 .nossosportifólios h2 {
     width: 100%;
-    background-color: #000200;
     position: static;
     color: transparent;
     font-weight: 1000;
     font-size: 2em;
     -webkit-text-stroke: 0.7px #fff;
     text-transform: uppercase;
-    margin-bottom: -2.5em;
+    margin-bottom: -3em;
     font-size: 2em;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 0em;
 }
 
 .nossoportifólio{
@@ -507,7 +506,6 @@ label[for="bt_menu"]{
     justify-content: center;
     align-items: center;
     min-height: 50vh;
-    background: #000200;
 }
 
 .portifólios{
@@ -515,6 +513,7 @@ label[for="bt_menu"]{
     display: flex;
     justify-content: space-between;
     margin-top: 6em;
+    margin-bottom: 7em;
 }
 
 .portifólios .card{
