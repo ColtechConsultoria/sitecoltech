@@ -496,7 +496,7 @@ label[for="bt_menu"]{
     font-size: 2em;
     -webkit-text-stroke: 0.7px #fff;
     text-transform: uppercase;
-    margin-bottom: -3em;
+    margin-bottom: -2.5em;
     font-size: 2em;
     text-align: center;
     margin-top: 2em;
@@ -506,7 +506,7 @@ label[for="bt_menu"]{
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 50vh;
     background: #000200;
 }
 
@@ -514,6 +514,7 @@ label[for="bt_menu"]{
     position: relative;
     display: flex;
     justify-content: space-between;
+    margin-top: 6em;
 }
 
 .portifólios .card{
