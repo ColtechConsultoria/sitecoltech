@@ -519,8 +519,8 @@ label[for="bt_menu"]{
 
 .portifólios .card{
     position: relative;
-    width: 300px;
-    height: 200px;
+    width: 280px;
+    height: 180px;
     margin: 20px;
 }
 
@@ -572,6 +572,10 @@ label[for="bt_menu"]{
 
 .portifólios .card:hover .face.face2{
     transform: translateY(0%) rotateX(0);
+}
+
+.p1 p{
+    font-size: 12px;
 }
 
 /*nossos membros*/
@@ -1017,6 +1021,23 @@ label[for="bt_menu"]{
     .line{
         font-size: 16px;
     }
+
+    /*portifólios*/
+
+    .nossoportifólio{
+        margin-bottom: -10em;
+    }
+
+    .portifólios{
+        margin-top: -6em;
+    }
+
+    .portifólios .card {
+        width: 232px;
+        height: 176px;
+        margin: 11px;
+    }
+
 
     .contact{
         padding: 50px;
