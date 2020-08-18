@@ -9,7 +9,7 @@
 
 }
 
-body { overflow-x: hidden; background-color: #000200;}
+body { overflow-x: hidden; background-color: white;}
 .estrelas{
     margin: 0;
     padding: 0;
@@ -25,7 +25,9 @@ body { overflow-x: hidden; background-color: #000200;}
     margin: 0 auto;
 }
 
-
+.black{
+    background-color: #000200;
+}
 /*inicio*/
 .estrelinhas {
     position: relative;
@@ -35,23 +37,25 @@ body { overflow-x: hidden; background-color: #000200;}
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url(../img/banner\ 5.png);
+    background-image: url(../img/banner\ 2.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position-y: -3em;
 }
 
 
 .engrenagem{
     width: 100%;
+    height: 12.2em;
 }
 
-.estrelinhas h1{
+.engrenagem h1{
     text-align: center;
     position: static;
     color: transparent;
     font-weight: 900;
     font-size: 8em;
-    -webkit-text-stroke: 2px orange;
+    -webkit-text-stroke: 4px white;
     text-transform: uppercase;
     
 }
@@ -179,7 +183,6 @@ IMG.displayed {
     width: 24.8%;
     float: left;
     border-left: orange solid 0.5px;
-    background-color: rgba(0, 0, 0, 0.4);
 }
 
 .menu a{
@@ -284,28 +287,106 @@ label[for="bt_menu"]{
     display: none;
 }
 
+/*divisória*/
+.divisória {
+    height: 40px;
+    background-color: #000200;
+    position: relative;
+    margin-top: 28em;
+}
+
+IMG.triângulo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
 /* Apresentação */
 
 
 .titulo h2{
     margin-bottom: 18px;
     width: 100%;
-    background-color: #000200;
     position: relative;
     color: transparent;
     font-weight: 1000;
     font-size: 2em;
-    -webkit-text-stroke: 0.7px #fff;
+    -webkit-text-stroke: 1.7px black;
     text-transform: uppercase;
     text-align: center;
 }
 
 .apresentação{
-    background-color: #000200;
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
-    margin-top: 30em;
 }
+
+.imgapresentação{
+    background-image: url(../img/apresentação.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 1px;
+    height: 100px;
+}
+
+.rd_tabsapresentação:checked ~ label{
+    background-image: url(../img/apresentação\ hover.png);
+    margin-top: -10px;
+}
+
+
+.imgmissão{
+    background-image: url(../img/missão.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 1px;
+    height: 100px;
+}
+
+
+.rd_tabsmissão:checked ~ label{
+    background-image: url(../img/missão\ hover.png);
+    margin-top: -10px;
+}
+
+.imgvisão{
+    background-image: url(../img/visão.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 1px;
+    height: 100px;
+}
+
+
+.rd_tabsvisão:checked ~ label{
+    background-image: url(../img/visão\ hover.png);
+    margin-top: -10px;
+}
+
+.imgvalores{
+    background-image: url(../img/valores.png);
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: 1px;
+    height: 100px;
+}
+
+
+.rd_tabsvalores:checked ~ label{
+    background-image: url(../img/valores\ hover.png);
+    margin-top: -10px;
+}
+
+
+.imgtext p{
+    margin-top: 77px;
+    color: orange;
+} 
 
 .nav_tabs{
     width: 600px;
@@ -332,10 +413,6 @@ label[for="bt_menu"]{
     text-align: center;
 }
 
-.rd_tabs:checked ~ label{
-    background-color: #ff9f0c;
-}
-
 .rd_tabs{
     display: none;
 }
@@ -348,12 +425,13 @@ label[for="bt_menu"]{
     height: 320px;
     width: 600px;
     left: 0px;
-    margin-top: 10px;
+    margin-top: 22px;
 }
 
 .contentt article{
     padding: 10px;
     text-align: center;
+    color: black;
 }
 
 .rd_tabs:checked ~ .contentt{
@@ -362,6 +440,12 @@ label[for="bt_menu"]{
 
 
 /*nossos serviços */
+.divisória2{
+    margin-top: -2em;
+    height: 33px;
+    margin-bottom: -9em;
+    background-color: #000200;
+}
 
 .serviços {
     display: flex;
@@ -432,12 +516,12 @@ label[for="bt_menu"]{
     color: transparent;
     font-weight: 1000;
     font-size: 2em;
-    -webkit-text-stroke: 0.7px #fff;
+    -webkit-text-stroke: 1.3px white;
     text-transform: uppercase;
     margin-bottom: 18px;
     font-size: 2em;
     text-align: center;
-    margin-top: -160px;
+    margin-top: -128px;
 }
 
 .nossosserviços{
@@ -452,12 +536,18 @@ label[for="bt_menu"]{
     color: transparent;
     font-weight: 1000;
     font-size: 2em;
-    -webkit-text-stroke: 0.7px #fff;
+    -webkit-text-stroke: 1.3px white;
     text-transform: uppercase;
-    margin-bottom: -3em;
     font-size: 2em;
     text-align: center;
     margin-top: 0em;
+}
+
+.nossosportifólios p {
+    color: orange;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 6px;
 }
 
 .nossoportifólio{
@@ -465,14 +555,17 @@ label[for="bt_menu"]{
     justify-content: center;
     align-items: center;
     min-height: 50vh;
+   
 }
-
+.port{
+    background-color: #000200;
+    height: 20em;
+}
 .portifólios{
     position: relative;
     display: flex;
     justify-content: space-between;
-    margin-top: 6em;
-    margin-bottom: 7em;
+    margin-bottom: 6em;
 }
 
 .portifólios .card{
@@ -536,16 +629,21 @@ label[for="bt_menu"]{
     font-size: 12px;
 }
 
+.divisória3 {
+    height: 40px;
+    background-color: #000200;
+    position: relative;
+}
 /*nossos membros*/
 
 .nossosmembros h2 {
     width: 100%;
-    background-color: #000200;
+    background-color: white;
     position: static;
     color: transparent;
     font-weight: 1000;
     font-size: 2em;
-    -webkit-text-stroke: 0.7px #fff;
+    -webkit-text-stroke: 1.7px black;
     text-transform: uppercase;
     margin-bottom: -15px;
     font-size: 2em;
@@ -553,9 +651,11 @@ label[for="bt_menu"]{
     margin-top: 2em;
 }
 
+
 .membros{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #000200;
+    background-color: white;
+    margin-top: -3em;
 }
 
 .testimonial{
@@ -588,7 +688,7 @@ label[for="bt_menu"]{
 .testimonial .title{
     font-size: 20px;
     font-weight: bold;
-    color: white;
+    color: black;
     text-transform: capitalize;
 }
 
@@ -605,7 +705,7 @@ label[for="bt_menu"]{
 
 .testimonial-content p{
     font-size: 15px;
-    color: white;
+    color: black;
     text-transform: capitalize;
     margin: 0 0 5px 0;
 }
@@ -615,13 +715,12 @@ label[for="bt_menu"]{
 }
 
 .deion{
-    margin-bottom: 7em;
+    margin-bottom: 8em;
 }
 
 
 
 /*Formulario*/
-
 
 .contact{
     position: relative;
@@ -632,6 +731,7 @@ label[for="bt_menu"]{
     align-items: center;
     flex-direction: column;
     background-color: #000200;
+    margin-top: 2em;
 }
 
 .contact .content{
@@ -649,7 +749,7 @@ label[for="bt_menu"]{
     -webkit-text-stroke: 0.7px #fff;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 2.5em;
+    margin-top: - 0.5em;
 }
 
 .informações{
@@ -787,13 +887,22 @@ label[for="bt_menu"]{
 @media(max-width:480px) {
     body { overflow-x: hidden; }
 
+    .menu ul li {
+        background-color: rgba(0, 0, 0, 0.8);
+    }
+    .estrelinhas{
+        height: 68vh;
+    }
+    .divisória {
+        margin-top: 10em;
+    }
 
     .estrelinhas{
         background-image: url(../img/banner\ 1.png);
     }
 
     .engrenagem{
-        margin-top: -17em;
+        margin-top: -5em;
     }
     .empresajr{
         height: 15vh;
@@ -804,9 +913,6 @@ label[for="bt_menu"]{
         max-width: 250px;
     }
 
-    .titulo h2{
-        margin-bottom: 80px;
-    }
 
     .titulo {
         margin-top: 40em !important;
@@ -821,24 +927,26 @@ label[for="bt_menu"]{
         float: left;
         margin-left: 5px;
         position: relative;
-       
+        margin-top: -430px;
+        z-index: 1;
         
-    }
-        
+    }   
+
     IMG.displayed {
         margin-left: 6px;
+
     }
     .menu ul {
         width: 100%;
         list-style: none;
         position: relative;
-        margin-top: -105vh;
+        margin-top: -103vh;
 
     }
 
     label[for="bt_menu"]{
         display: block;
-    
+        margin-top: -66vh;
 
     }
 
@@ -856,10 +964,12 @@ label[for="bt_menu"]{
         height: auto;
         max-height: 200px;
     }
+
+    
     
     /* CSS padrão da div */
     .menu {
-        margin-top: 100px;
+        margin-top: 297px;
         margin-left: -100%;
         transition: linear 0.4s;
     }
@@ -883,6 +993,10 @@ label[for="bt_menu"]{
     }
 
     /*Apresentação*/
+
+    .apresentação{
+        margin-top: -39em;
+    }
     .nav_tabs {
         width: 300px;
         height: 36pc;
@@ -897,30 +1011,69 @@ label[for="bt_menu"]{
     }
 
     .contentt{
-        margin-top: 10px;
+        margin-top: 21px;
         width: 300px;
+    }
+
+    .sobrenós{
+        margin-bottom: -14em;
     }
     
     .nav_tabs ul li {
-        margin-top: -55px !important;
+        margin-top: -40px !important;
     }
-    
 
+    .imgapresentação {
+        background-size: 62px;
+    }
+
+    .imgmissão{
+        background-size: 62px;
+    } 
+    
+    .imgvisão {
+        background-size: 62px;
+    } 
+    
+    .imgvalores {
+        background-size: 62px;
+    } 
+    
+    .imgtext p {
+        margin-top: 60px;
+    }
+
+    .divisória2{
+        margin-top: 8em;
+    }
 
     /*nossos serviços*/
     .nossosserviços{
-        margin-top: 10em !important;
+        margin-top: 9em !important;
     }
 
     /*portifólios*/
 
     .portifólios {
-        margin-top: 7em;
         display: inline-block;
+    }
+
+    .port{
+        height: 44em;
+    }
+
+    .nossosportifólios h2{
+        font-size: 1.7em;
     }
 
 
     /*membros*/
+    .demo{
+        margin-top: 5em;
+    }
+    .nossosmembros h2{
+        font-size: 1.6em;
+    }
     .testimonial{
         margin: 0 40px 100px;
     }
@@ -979,9 +1132,58 @@ label[for="bt_menu"]{
     }
 
     .portifólios {
-        margin-top: 7em;
+        margin-top: 0em;
         display: inline-block;
     }
+
+    .port {
+        height: 43em;
+    }
+
+        /*membros*/
+        .demo{
+            margin-top: 5em;
+        }
+        .nossosmembros h2{
+            font-size: 1.6em;
+        }
+        .testimonial{
+            margin: 0 40px 100px;
+        }
+    
+        /*contato*/
+        .contact{
+            padding: 50px;
+        }
+    
+        .contate{
+            flex-direction: column;
+        }
+    
+        .informações{
+            display: block;
+        }
+    
+        .contactform{
+            width: 100%;
+            align-items: center;
+        }
+    
+        .imagemlocalização{
+            width: 222px !important;
+        }
+    
+        .localização{
+            margin-top: -26em;
+        }
+    
+        .contactform h2{
+            margin-top: 6em;
+        }
+    
+        .contactform{
+            height: 40em;
+        }
 }
 
 
@@ -1006,6 +1208,10 @@ label[for="bt_menu"]{
         font-size: 16px;
     }
 
+    .divisória {
+        margin-top: 21em;
+    }
+
     /*portifólios*/
 
     .nossoportifólio{
@@ -1016,9 +1222,9 @@ label[for="bt_menu"]{
         margin-bottom: -1em;
     }
 
-    .portifólios{
-        margin-top: 3em;
-        margin-bottom: 12em;
+    .portifólios {
+        margin-top: 1em;
+        margin-bottom: 4em;
     }
 
     .portifólios .card {
@@ -1027,10 +1233,14 @@ label[for="bt_menu"]{
         margin: 6px;
     }
 
+    .nossosportifólios p {
+    
+        margin-top: 37px;
+    }
     /*nossosserviços*/
 
     .nossosserviços {
-        margin-top: 2em !important;
+        margin-top: 6em !important;
     }
 
     .contact{
@@ -1053,11 +1263,12 @@ label[for="bt_menu"]{
     .contactform{
         width: 100%;
         align-items: center;
-        height: 80em;
+        height: 50em;
     }
 
     .imagemlocalização {
         width: 365px !important;
+        margin-top: 30em;
     }
 
     .localização {
@@ -1065,7 +1276,7 @@ label[for="bt_menu"]{
     }
 
     .contactform h2 {
-        margin-top: -5em;
+        margin-top: 9em;
     }
 
 }
@@ -1082,6 +1293,14 @@ label[for="bt_menu"]{
 
     .line{
         font-size: 16px;
+    }
+
+    .divisória{
+        margin-top: 21em;
+    }
+
+    .divisória2 {
+        margin-top: 2em;
     }
 
     /*portifólios*/
