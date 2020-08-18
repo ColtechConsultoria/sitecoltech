@@ -962,7 +962,37 @@ label[for="bt_menu"]{
     
 }
 
-@media(min-width:481px) and (max-width:1030px){
+@media(min-width:482px) and (max-width:660px){
+    .estrelinhas{
+        background-image: url(../img/banner\ 1.png);
+        background-position-y: -4em;
+    }
+
+    .estrelinhas h1{
+        font-weight: 900;
+        font-size: 5em;
+    }
+
+    .line{
+        white-space: normal;
+        max-width: 360px;
+    }
+
+    .portifólios {
+        margin-top: 7em;
+        display: inline-block;
+    }
+}
+
+
+@media(min-width:660px) and (max-width:775px){
+    .estrelinhas{
+        background-image: url(../img/banner\ 1.png);
+        background-position-y: -10em;
+    }
+}
+
+@media(min-width:661px) and (max-width:1030px){
 
     
 
