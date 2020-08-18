@@ -38,6 +38,7 @@ body { overflow-x: hidden; background-color: #000200;}
     background-image: url(../img/banner\ 5.png);
     background-size: 100%;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 
