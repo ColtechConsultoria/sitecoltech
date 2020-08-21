@@ -11,6 +11,11 @@ body { overflow-x: hidden; background-color: white;}
     font-family: 'Lato', sans-serif;
 }
 
+.textobanner {
+    margin-left: 9em;
+    margin-top: -4em;
+}
+
 
 
 .banner{
@@ -24,17 +29,24 @@ body { overflow-x: hidden; background-color: white;}
     align-items: center;
 }
 
-.banner h2{
-    font-size: 3em;
+.banner h3 {
+    font-size: 2.2em;
     color: #fff;
     font-weight: 500;
     line-height: 1.5em;
+    text-shadow: black 0.1em 0.1em 2px;
 }
 
+
 .banner h2 .nomeempresa{
-    font-size: 1.5em;
-    color: #fff;
-    font-weight: 500;
+    text-align: center;
+    position: static;
+    color: transparent;
+    font-weight: 900;
+    font-size: 4em;
+    -webkit-text-stroke: 4px white;
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-transform: uppercase;
 }
 
 .btn{
@@ -993,6 +1005,20 @@ IMG.triângulo{
         margin-top: 10em;
     }
 
+    .textobanner {
+        margin-left: -2em;
+        margin-top: -8em;
+    }
+
+    .banner h2 .nomeempresa {
+        font-size: 3em;
+        -webkit-text-stroke: 3px white;
+    }
+
+    .banner h3{
+        font-size: 1.6em !important;
+    }
+
     /*Apresentação*/
 
     
@@ -1324,16 +1350,21 @@ IMG.triângulo{
         padding: 20px 50px;
     }
 
+    .textobanner {
+        margin-left: 0em;
+        margin-top: -6em;
+    }
+
     .menu{
         position: fixed;
         top: 69px;
         left: -100%;
         display: block;
-        padding: 100px 50px;
+        padding: 3em 50px;
         text-align: center;
         width: 100%;
-        height: 100vh;
-        background: #fff;
+        height: 64vh;
+        background: rgba(277, 277, 277, 0.8);
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
