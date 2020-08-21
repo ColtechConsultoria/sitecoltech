@@ -76,7 +76,7 @@ header{
 
 header.sticky{
     background: rgba(277, 277, 277, 0.7);
-    padding: 20px 100px;
+    padding: 5px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
 }
 
@@ -551,9 +551,10 @@ IMG.triângulo{
 
 
 /*nossos serviços */
+
 .divisória2{
     margin-top: -2em;
-    height: 33px;
+    height: 4em;
     margin-bottom: -9em;
     background-color: #000200;
 }
@@ -620,6 +621,7 @@ IMG.triângulo{
     margin-top: 5px;
 }
 
+
 .nossosserviços h2 {
     width: 100%;
     background-color: #000200;
@@ -632,7 +634,7 @@ IMG.triângulo{
     margin-bottom: 18px;
     font-size: 2em;
     text-align: center;
-    margin-top: -128px;
+    margin-top: -117px;
 }
 
 .nossosserviços{
@@ -1345,7 +1347,7 @@ IMG.triângulo{
 @media(max-width: 991px){
     
     header, header.sticky{
-        padding: 20px 50px;
+        padding: 5px 50px;
     }
 
     .textobanner {
