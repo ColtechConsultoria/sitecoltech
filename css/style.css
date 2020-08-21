@@ -2,14 +2,113 @@
 
 /* família de fontes: 'Lato', sans-serif; */
 
-*{
-    
-    font-family: 'Lato', sans-serif;
-    box-sizing: border-box;
+body { overflow-x: hidden; background-color: white;}
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
 
-body { overflow-x: hidden; background-color: white;}
+section{
+    padding: 100px;
+}
+
+.banner{
+    position: relative;
+    min-height: 100vh;
+    background: url(../img/banner\ 2-2.png);
+    background-size: cover;
+    background-position: right;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.banner h2{
+    font-size: 3em;
+    color: #fff;
+    font-weight: 500;
+    line-height: 1.5em;
+}
+
+.banner h2 .nomeempresa{
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: 500;
+}
+
+.btn{
+    position: relative;
+    background: orange;
+    display: inline-block;
+    color: #fff;
+    margin-top: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2px;
+    font-weight: 500;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.7s;
+}
+
+header.sticky{
+    background: #fff;
+    padding: 20px 100px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a{
+    color: #111;
+}
+
+
+/*
 .estrelas{
     margin: 0;
     padding: 0;
@@ -29,6 +128,7 @@ body { overflow-x: hidden; background-color: white;}
     background-color: #000200;
 }
 /*inicio*/
+/*
 .estrelinhas {
     position: relative;
     width: 100%;
@@ -147,6 +247,7 @@ body { overflow-x: hidden; background-color: white;}
     margin-bottom: 27px;
     position: relative;
     margin-top: -98vh;
+    display: none;
 }
 
 IMG.displayed {
@@ -286,6 +387,8 @@ label[for="bt_menu"]{
 .tracin{
     display: none;
 }
+
+*/
 
 /*divisória*/
 .divisória {
@@ -899,6 +1002,7 @@ IMG.triângulo{
 
     .estrelinhas{
         background-image: url(../img/banner\ 1.png);
+        position: relative;
     }
 
     .engrenagem{
@@ -923,13 +1027,12 @@ IMG.triângulo{
     }
 
     .logo {
+        display: contents;
         width: 70%;
         float: left;
         margin-left: 5px;
-        position: relative;
-        margin-top: -430px;
+        position: absolute;
         z-index: 1;
-        
     }   
 
     IMG.displayed {

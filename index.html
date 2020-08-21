@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
 	<title>coltech consultoria</title>
-    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https:// maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
@@ -19,47 +19,26 @@
     padding: 0;
 }
 </style>
-
 <body>
-    <header class="cabecalho">
-        <div class="black">
-            <div class="estrelas">
-                <section class="estrelinhas">
-                    <div class="star star1"></div>
-                    <div class="star star2"></div>
-                    <div class="star star3"></div>
-                    <div class="star star4"></div>
-                    <div class="star star5"></div>
-                    <div class="star star6"></div>
-                    <div class="star star7"></div>
-                    <div class="star star8"></div>
-                    <div class="engrenagem">
-                        <h1>            coltech            </h1>
-                        <p class=" empresajr line typing-animation">Empresa jr de Engenharia mecânica, Elétrica e Computação</p>
-                    </div>
-                </section>
-            </div>
-            <div class="logo">
-                <a href="index.html"><img class="displayed" src="./img/logo coltech.png" alt="" style="width: 64px;"></a>
-            </div>
-            <input type="checkbox" id="bt_menu">
-            <div class="menuu">
-                <label for="bt_menu" id="btn-esconder"><span class="tracin"></span></label>
-            </div>
-            <div>
-                <nav class="menu escondivel">
-                    <ul>
-                        <li><a href="#">História</a></li>
-                        <li><a href="#">Serviços</a></li>
-                        <li><a href="#">Portifólio</a></li>
-                        <li><a href="#">Contatos</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="divisória">
-                <img src="./img/triangulo.png" alt="" style="height: 40px;" class="triângulo">
-            </div>
+    <header>
+        <a href="#" class="logo">portifólio</a>
+        <div class="toggle"></div>
+        <ul>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+            <li><a href="#">home</a></li>
+        </ul>
+    </header>
+    <section class="banner">
+        <div>
+            <h2> <br> <span class= "nomeempresa">Coltech</span></h2>
+            <h3>colsultoria em engenharia jr</h3>
+            <a href="#" class="btn">sobre nós</a>
         </div>
+    </section>
+    <head>
         <div class="apresentação">
             <div class="sobrenós">
                 <nav class="nav_tabs">
@@ -111,7 +90,7 @@
                 </nav>
             <div>   
         </div>
-    </header>
+    </head>
     <div class="divisória2">
     </div>
     <head>
@@ -566,6 +545,13 @@
                 pagination:true,
                 autoPlay:true
             })
+        });
+        
+    </script>
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            var header = document.querySelector('header');
+            header.classList.toggle('sticky', window.scrollY > 0);
         });
     </script>
 </body>
