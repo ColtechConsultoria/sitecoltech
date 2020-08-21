@@ -11,9 +11,7 @@ body { overflow-x: hidden; background-color: white;}
     font-family: 'Lato', sans-serif;
 }
 
-section{
-    padding: 100px;
-}
+
 
 .banner{
     position: relative;
@@ -990,116 +988,19 @@ IMG.triângulo{
 @media(max-width:480px) {
     body { overflow-x: hidden; }
 
-    .menu ul li {
-        background-color: rgba(0, 0, 0, 0.8);
-    }
-    .estrelinhas{
-        height: 68vh;
-    }
+
     .divisória {
         margin-top: 10em;
     }
 
-    .estrelinhas{
-        background-image: url(../img/banner\ 1.png);
-        position: relative;
-    }
-
-    .engrenagem{
-        margin-top: -5em;
-    }
-    .empresajr{
-        height: 15vh;
-    }
-
-    .line{
-        white-space: normal;
-        max-width: 250px;
-    }
-
-
-    .titulo {
-        margin-top: 40em !important;
-    }
-
-    .cabecalho {
-        margin-top: 0px;
-    }
-
-    .logo {
-        display: contents;
-        width: 70%;
-        float: left;
-        margin-left: 5px;
-        position: absolute;
-        z-index: 1;
-    }   
-
-    IMG.displayed {
-        margin-left: 6px;
-
-    }
-    .menu ul {
-        width: 100%;
-        list-style: none;
-        position: relative;
-        margin-top: -103vh;
-
-    }
-
-    label[for="bt_menu"]{
-        display: block;
-        margin-top: -66vh;
-
-    }
-
-    .tracin{
-        display: initial;
-    }
-
-    .menu ul li{
-        width: 100%;
-        float: none;
-        border-left: none;
-    }
-
-    .menu ul li:hover ul{
-        height: auto;
-        max-height: 200px;
-    }
-
-    
-    
-    /* CSS padrão da div */
-    .menu {
-        margin-top: 297px;
-        margin-left: -100%;
-        transition: linear 0.4s;
-    }
-    
-    /* CSS quando o checkbox está marcado */
-    #bt_menu:checked ~ * .menu {
-        margin-left: 0;
-        transition: linear 0.4s;
-    }          
-
-    .estrelinhas h1{
-        font-weight: 900;
-        font-size: 3.5em;
-    }
-    
-    .texto p {
-        width: 80%;
-        font-size: 22px;
-        margin-left: 59px;
-        margin-top: 34px;
-    }
-
     /*Apresentação*/
 
-    .apresentação{
-        margin-top: -39em;
+    
+    .titulo h2 {
+        margin-bottom: 2em;
+        
     }
+
     .nav_tabs {
         width: 300px;
         height: 36pc;
@@ -1146,9 +1047,6 @@ IMG.triângulo{
         margin-top: 60px;
     }
 
-    .divisória2{
-        margin-top: 8em;
-    }
 
     /*nossos serviços*/
     .nossosserviços{
@@ -1219,21 +1117,7 @@ IMG.triângulo{
 }
 
 @media(min-width:482px) and (max-width:660px){
-    .estrelinhas{
-        background-image: url(../img/banner\ 1.png);
-        background-position-y: -4em;
-    }
-
-    .estrelinhas h1{
-        font-weight: 900;
-        font-size: 5em;
-    }
-
-    .line{
-        white-space: normal;
-        max-width: 360px;
-    }
-
+    
     .portifólios {
         margin-top: 0em;
         display: inline-block;
@@ -1243,77 +1127,55 @@ IMG.triângulo{
         height: 43em;
     }
 
-        /*membros*/
-        .demo{
-            margin-top: 5em;
-        }
-        .nossosmembros h2{
-            font-size: 1.6em;
-        }
-        .testimonial{
-            margin: 0 40px 100px;
-        }
+    /*membros*/
+    .demo{ 
+        margin-top: 5em;
+    }
+    .nossosmembros h2{
+        font-size: 1.6em;
+    }
+    .testimonial{
+        margin: 0 40px 100px;
+    }
     
-        /*contato*/
-        .contact{
-            padding: 50px;
-        }
+    /*contato*/
+    .contact{
+        padding: 50px;
+    }
     
-        .contate{
-            flex-direction: column;
-        }
+    .contate{
+        flex-direction: column;
+    }
     
-        .informações{
-            display: block;
-        }
+    .informações{
+        display: block;
+    }
     
-        .contactform{
-            width: 100%;
-            align-items: center;
-        }
+    .contactform{
+        width: 100%;
+        align-items: center;
+    }
     
-        .imagemlocalização{
-            width: 222px !important;
-        }
+    .imagemlocalização{
+        width: 222px !important;
+    }
     
-        .localização{
-            margin-top: -26em;
-        }
+    .localização{
+        margin-top: -26em;
+    }
     
-        .contactform h2{
-            margin-top: 6em;
-        }
+    .contactform h2{
+        margin-top: 6em;
+    }
     
-        .contactform{
-            height: 40em;
-        }
-}
-
-
-@media(min-width:660px) and (max-width:775px){
-    .estrelinhas{
-        background-image: url(../img/banner\ 1.png);
-        background-position-y: -10em;
+    .contactform{
+        height: 40em;
     }
 }
+
 
 @media(min-width:661px) and (max-width:1030px){
 
-    
-
-    .estrelinhas h1{
-        font-weight: 900;
-        font-size: 6em;
-
-    }
-
-    .line{
-        font-size: 16px;
-    }
-
-    .divisória {
-        margin-top: 21em;
-    }
 
     /*portifólios*/
 
@@ -1388,15 +1250,6 @@ IMG.triângulo{
 
 @media(min-width:1031px) and (max-width:1200px){
 
-
-    .estrelinhas h1{
-        font-weight: 900;
-        font-size: 6em;
-    }
-
-    .line{
-        font-size: 16px;
-    }
 
     .divisória{
         margin-top: 21em;
