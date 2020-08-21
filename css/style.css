@@ -10,6 +10,16 @@ body { overflow-x: hidden; background-color: white;}
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
 }
+/*scrollbar*/
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: orange;
+    border-radius: 6px;
+}
+
 
 .textobanner {
     margin-left: 9em;
@@ -115,288 +125,6 @@ header.sticky ul li a{
     color: #111;
 }
 
-
-/*
-.estrelas{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
-}
-
-.line{
-    color: orange;
-    font-family: 'Lato', sans-serif;
-    font-size: 1.3em;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.black{
-    background-color: #000200;
-}
-/*inicio*/
-/*
-.estrelinhas {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-image: url(../img/banner\ 2.png);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position-y: -3em;
-}
-
-
-.engrenagem{
-    width: 100%;
-    height: 12.2em;
-}
-
-.engrenagem h1{
-    text-align: center;
-    position: static;
-    color: transparent;
-    font-weight: 900;
-    font-size: 8em;
-    -webkit-text-stroke: 4px white;
-    text-transform: uppercase;
-    
-}
-
-.estrelinhas .star{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    animation: animate 8s ease-in-out infinite,
-                backgroundmove 16s linear infinite;
-}
-
-.estrelinhas .star.star1{
-    animation-delay: 0s;
-    background: url(../stars/star1.png);
-}
-
-.estrelinhas .star.star1{
-    animation-delay: -1s;
-    background: url(../stars/star1.png);
-}
-
-.estrelinhas .star.star2{
-    animation-delay: -2s;
-    background: url(../stars/star2.png);
-}
-
-.estrelinhas .star.star3{
-    animation-delay: -3s;
-    background: url(../stars/star3.png);
-}
-
-.estrelinhas .star.star4{
-    animation-delay: -4s;
-    background: url(../stars/star4.png);
-}
-
-.estrelinhas .star.star5{
-    animation-delay: -5s;
-    background: url(../stars/star5.png);
-}
-
-.estrelinhas .star.star6{
-    animation-delay: -6s;
-    background: url(../stars/star6.png);
-}
-
-.estrelinhas .star.star7{
-    animation-delay: -7s;
-    background: url(../stars/star7.png);
-}
-
-.estrelinhas .star.star8{
-    animation-delay: -8s;
-    background: url(../stars/star8.png);
-}
-@keyframes animate
-{
-    0%,20%,40%,60%,80%,100%
-    {
-        opacity: 0;
-    }
-
-    10%,30%,50%,70%
-    {
-        opacity: 1;
-    }
-}
-
-@keyframes backgroundmove
-{
-    0%
-    {
-        transform: scale(1);  
-    }
-    100%
-    {
-        transform: scale(2);
-    }
-}
-.logo {
-    width: 100%;
-    height: 56px;
-    font-size: 0px;
-    margin-top: 16px;
-    margin-bottom: 27px;
-    position: relative;
-    margin-top: -98vh;
-    display: none;
-}
-
-IMG.displayed {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.cabecalho {
-    margin-top: -5px;
-    width: 100%;  
-}
-
-.menuu{
-    width: 15%;
-    float: right;
-}
-
-.menu {
-    margin-top: 5px;
-    width: 100%;
-    height: 48px;
-    font-family: 'Lato', sans-serif, Helvetica, sans-serif;
-}
-
-.menu ul {
-    list-style: none;
-    position: relative;
-    
-
-}
-
-.menu ul li {
-    width: 24.8%;
-    float: left;
-    border-left: orange solid 0.5px;
-}
-
-.menu a{
-    padding: 15px;
-    display: block;
-    text-decoration: none;
-    text-align: center;
-    color: #fff;
-    font-size: 20px;
-}
-
-
-.menu a:hover{
-    width: 100%;
-    margin-top: -7px;
-    float: none;
-    text-align: center;
-    color: orange;
-}
-
-
-label[for="bt_menu"] {
-    padding: 5px;
-    background-color: #222;
-    color: #fff;
-    font-family: Arial, Helvetica, sans-serif;
-    text-align: center;
-    font-size: 30px;
-    cursor: pointer;
-    width: 49px;
-    height: 49px;
-    border-radius: 15px ;
-    transition: all .3s linear;
-    margin-left: -9px;
-    position: absolute;
-    margin-top: -97vh;
-}
-
-.tracin {
-    float: right;
-    width: 28px;
-    height: 3.8px;
-    position: absolute;
-    background-color: #fff;
-    transition: all .3s linear;
-    margin-top: 18px;
-    margin-left: -13px;
-}
-
-
-.tracin:before {
-    content: '';
-    width: 28px;
-    height: 3.8px;
-    bottom: -12px;
-    margin-left: -14px;
-    position: absolute;
-    background-color: #fff;
-    transition: all .3 linear;
-}
-
-.tracin:after {
-    content: '';
-    width: 28px;
-    height: 3.8px;
-    top: -12px;
-    margin-left: -14px;
-    position: absolute;
-    background-color: #fff;
-    transition: all .3 linear;
-}
-
-#bt_menu:checked ~ * .tracin{
-    background-color: transparent;
-}
-
-#bt_menu:checked ~ * .tracin:before{
-    transition: all .3 linear;
-    transform: translate(0px, -12px) rotate(-45deg)
-
-}
-
-#bt_menu:checked ~ * .tracin:after{
-    transition: all .3 linear;
-    transform: translate(0px, 12px) rotate(45deg)
-}
-
-#bt_menu:checked ~ * label{
-    transition: all .3 linear;
-    border-radius: 50%;
-}
-
-#bt_menu{
-    display: none;
-}
-
-label[for="bt_menu"]{
-    display: none;
-}
-
-.tracin{
-    display: none;
-}
-
-*/
 
 /*divisória*/
 .divisória {
@@ -1106,6 +834,10 @@ IMG.triângulo{
     }
 
     /*contato*/
+    .informações .contactinfo {
+        width: 100%;
+    }
+
     .contact{
         padding: 50px;
     }
@@ -1165,6 +897,10 @@ IMG.triângulo{
     }
     
     /*contato*/
+    .informações .contactinfo {
+        width: 100%;
+    }
+
     .contact{
         padding: 50px;
     }
@@ -1232,6 +968,12 @@ IMG.triângulo{
 
     .nossosserviços {
         margin-top: 6em !important;
+    }
+
+    /* contato */ 
+
+    .informações .contactinfo {
+        width: 100%;
     }
 
     .contact{
@@ -1305,6 +1047,12 @@ IMG.triângulo{
 
     .nossosserviços {
         margin-top: 2em !important;
+    }
+
+    /*contato*/
+
+    .informações .contactinfo {
+        width: 100%;
     }
 
     .contact{
@@ -1419,6 +1167,8 @@ IMG.triângulo{
         padding: 10px 20px;
         font-size: 16px;
     }
+
+    
 /*
     .heading h2{
         font-size: 24px;
