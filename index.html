@@ -17,29 +17,32 @@
 *{
     margin: 0; 
     padding: 0;
+    scroll-behavior: smooth;
 }
+
 </style>
 <body>
     <header>
         <a href="#" class="logo">portifólio</a>
-        <div class="toggle"></div>
-        <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
-            <li><a href="#">home</a></li>
+        <div class="toggle" onclick="toggleMenu();"></div>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#apresentação">Apresentação</a></li>
+            <li><a href="#serviços">Serviços</a></li>
+            <li><a href="#portifólio">Portifólio</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#contatos">Contatos</a></li>
         </ul>
     </header>
-    <section class="banner">
+    <section class="banner" id="inicio">
         <div>
             <h2> <br> <span class= "nomeempresa">Coltech</span></h2>
             <h3>colsultoria em engenharia jr</h3>
-            <a href="#" class="btn">sobre nós</a>
+            <a href="#apresentação" class="btn">sobre nós</a>
         </div>
     </section>
     <head>
-        <div class="apresentação">
+        <div class="apresentação" id="apresentação">
             <div class="sobrenós">
                 <nav class="nav_tabs">
                     <div class="titulo" style="margin-top: 2em;">
@@ -95,7 +98,7 @@
     </div>
     <head>
         <center>
-            <div class="nossosserviços">
+            <div class="nossosserviços" id="serviços">
                 <h2>Nossos Serviços</h2>
             </div>
         </center>
@@ -167,7 +170,7 @@
         </div>
     </head>
     <div class="port" style="position: relative;">
-        <div class="nossosportifólios">
+        <div class="nossosportifólios" id="portifólio">
             <h2>Nossos portifólios</h2>
             <p>Conheça alguns serviços ja executados pela nossa empresa</p>
         </div>
@@ -223,7 +226,7 @@
     </div>
     <section class="membros">
         <div class="demo">
-            <div class="nossosmembros">
+            <div class="nossosmembros" id="equipe">
                 <h2>conheça nossa equipe maravilhosa</h2>
             </div>
             <div class="container">
@@ -446,7 +449,7 @@
             </div>
         </div>
     </section>
-    <div class="entreemcontato">
+    <div class="entreemcontato" id="contatos">
         <section class="contact">
             <div class="contate">
                 <h2>Entre em contato</h2>
@@ -553,5 +556,13 @@
             var header = document.querySelector('header');
             header.classList.toggle('sticky', window.scrollY > 0);
         });
+
+        function toggleMenu(){
+            var menuToggle = document.querySelector('.toggle');
+            var menu = document.querySelector('.menu');
+            menuToggle.classList.toggle('active');
+            menu.classList.toggle('active');
+            
+        }
     </script>
 </body>
