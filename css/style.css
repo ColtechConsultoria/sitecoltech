@@ -69,6 +69,7 @@ body { overflow-x: hidden; background-color: white;}
     text-decoration: none;
     letter-spacing: 2px;
     font-weight: 500;
+    border-radius: 14px;
 }
 
 header{
@@ -119,6 +120,7 @@ header ul li a{
     margin: 0 15px;
     color: #fff;
     text-decoration: none;
+    font-size: 19px;
 }
 
 header.sticky ul li a{
@@ -371,6 +373,22 @@ IMG.triângulo{
 
 /*Nossos portifólios*/
 
+.p1 a{
+    position: relative;
+    display: inline-block;
+    padding: 6px 18px;
+    margin: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, orange, orangered);
+    
+
+ }
+
 .nossosportifólios h2 {
     width: 100%;
     position: static;
@@ -467,7 +485,10 @@ IMG.triângulo{
 }
 
 .p1 p{
-    font-size: 12px;
+    font-size: 14px;
+    color: black;
+    margin-top: 25px;
+    margin-bottom: -20px;
 }
 
 .divisória3 {
@@ -808,6 +829,8 @@ IMG.triângulo{
     }
 
     /*portifólios*/
+
+    
 
     .portifólios {
         display: inline-block;
@@ -1168,7 +1191,7 @@ IMG.triângulo{
         font-size: 16px;
     }
 
-    
+
 /*
     .heading h2{
         font-size: 24px;
