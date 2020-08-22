@@ -29,7 +29,7 @@ body { overflow-x: hidden; background-color: white;}
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url(../img/banner\ 2-2.png);
+    background: url(../img/banner.png);
     background-size: cover;
     background-position: right;
     display: flex;
