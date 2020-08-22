@@ -161,6 +161,9 @@ IMG.triângulo{
 .apresentação{
     font-family: Arial, Helvetica, sans-serif;
     color: #fff;
+    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(../img/fundo.png);
+    background-size: auto;
+
 }
 
 .imgapresentação{
@@ -500,7 +503,6 @@ IMG.triângulo{
 
 .nossosmembros h2 {
     width: 100%;
-    background-color: white;
     position: static;
     color: transparent;
     font-weight: 1000;
@@ -516,7 +518,6 @@ IMG.triângulo{
 
 .membros{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
     margin-top: -3em;
 }
 
@@ -848,6 +849,8 @@ IMG.triângulo{
     /*membros*/
     .demo{
         margin-top: 5em;
+        background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(../img/fundo.png);
+        background-size: auto;
     }
     .nossosmembros h2{
         font-size: 1.6em;
