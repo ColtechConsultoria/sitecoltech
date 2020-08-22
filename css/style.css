@@ -1,4 +1,5 @@
 @import 'https://fonts.googleapis.com/css2? family = Lato & display = swap';
+ 
 
 /* família de fontes: 'Lato', sans-serif; */
 
@@ -8,7 +9,7 @@ body { overflow-x: hidden; background-color: white;}
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Exo', sans-serif;
 }
 /*scrollbar*/
 ::-webkit-scrollbar{
@@ -22,8 +23,8 @@ body { overflow-x: hidden; background-color: white;}
 
 
 .textobanner {
-    margin-left: 9em;
-    margin-top: -4em;
+    margin-left: 5em;
+    margin-top: 1em;
 }
 
 .banner{
@@ -46,15 +47,19 @@ body { overflow-x: hidden; background-color: white;}
 }
 
 
-.banner h2 .nomeempresa{
+.banner h2 .nomeempresa {
     text-align: center;
     position: static;
-    color: transparent;
-    font-weight: 900;
+    color: white;
+    /* color: transparent; */
+    /* font-weight: 900; */
     font-size: 4em;
-    -webkit-text-stroke: 4px white;
+    /* -webkit-text-stroke: 4px white; */
     text-shadow: black 0.1em 0.1em 0.1em;
     text-transform: uppercase;
+    font-family: 'Exo', sans-serif;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #000;
 }
 
 .btn{
@@ -83,6 +88,8 @@ header{
     justify-content: space-between;
     align-items: center;
     transition: 0.7s;
+    height: 5em;
+    background-color: rgba(247, 134, 32, 0.6);
 }
 
 header.sticky{
@@ -159,11 +166,10 @@ IMG.triângulo{
 }
 
 .apresentação{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Exo', sans-serif;
     color: #fff;
-    background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(../img/fundo.png);
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,.9)), url(../img/fundo.png);
     background-size: auto;
-
 }
 
 .imgapresentação{
@@ -516,9 +522,12 @@ IMG.triângulo{
 }
 
 
-.membros{
-    font-family: Arial, Helvetica, sans-serif;
+.membros {
+    font-family: 'Exo', sans-serif;
     margin-top: -3em;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,.9)), url(../img/fundo.png);
+    background-size: auto;
+    background-repeat: repeat-x;
 }
 
 .testimonial{
@@ -762,7 +771,7 @@ IMG.triângulo{
 
     .banner h2 .nomeempresa {
         font-size: 3em;
-        -webkit-text-stroke: 3px white;
+        /*-webkit-text-stroke: 3px white; */
     }
 
     .banner h3{
@@ -779,7 +788,7 @@ IMG.triângulo{
 
     .nav_tabs {
         width: 300px;
-        height: 36pc;
+        height: 38pc;
     }
 
     .nav_tabs label {
@@ -849,9 +858,9 @@ IMG.triângulo{
     /*membros*/
     .demo{
         margin-top: 5em;
-        background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(../img/fundo.png);
-        background-size: auto;
+        
     }
+
     .nossosmembros h2{
         font-size: 1.6em;
     }
@@ -1126,20 +1135,20 @@ IMG.triângulo{
     }
 
     .textobanner {
-        margin-left: -1em;
-        margin-top: -6em;
+        margin-left: -2em;
+        margin-top: -2em;
     }
 
-    .menu{
+    .menu {
         position: fixed;
-        top: 69px;
+        top: 79px;
         left: -100%;
         display: block;
-        padding: 3em 50px;
+        padding: 1em 50px;
         text-align: center;
         width: 100%;
-        height: 64vh;
-        background: rgba(277, 277, 277, 0.8);
+        height: 45vh;
+        background: rgba(277, 277, 277, 0.9);
         transition: 0.5s;
         z-index: 999;
         border-top: 1px solid rgba(0, 0, 0, 0.2);
@@ -1149,10 +1158,11 @@ IMG.triângulo{
         left: 0;
     }
 
-    header ul li a{
+    header ul li a {
         color: #111;
         font-size: 24px;
-        margin: 10px;
+        margin: 5px;
+        border-bottom: solid 1px orange;
     }
 
     .toggle{
@@ -1196,6 +1206,7 @@ IMG.triângulo{
     }
 
 
+
 /*
     .heading h2{
         font-size: 24px;
@@ -1213,5 +1224,8 @@ IMG.triângulo{
         margin-bottom: 20px;
     }
 */
+
 }
 
+
+/*loading*/
