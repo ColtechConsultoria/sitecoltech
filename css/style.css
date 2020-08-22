@@ -53,13 +53,13 @@ body { overflow-x: hidden; background-color: white;}
     font-weight: 900;
     font-size: 4em;
     -webkit-text-stroke: 4px white;
-    text-shadow: black 0.1em 0.1em 0.2em;
+    text-shadow: black 0.1em 0.1em 0.1em;
     text-transform: uppercase;
 }
 
 .btn{
     position: relative;
-    background: orange;
+    background: black;
     display: inline-block;
     color: #fff;
     margin-top: 20px;
