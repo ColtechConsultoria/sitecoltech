@@ -1123,7 +1123,7 @@ IMG.triângulo{
     }
 
     .textobanner {
-        margin-left: 0em;
+        margin-left: -1em;
         margin-top: -6em;
     }
 
@@ -1183,7 +1183,7 @@ IMG.triângulo{
     }
 
     .banner h3{
-        font-size: 1em;
+        font-size: 0.7em;
     }
 
     .btn{
