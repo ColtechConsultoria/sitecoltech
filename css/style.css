@@ -84,7 +84,7 @@ header{
     left: 0;
     width: 100%;
     padding: 40px 100px;
-    z-index: 1000;
+    z-index: 3;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -97,7 +97,7 @@ header.sticky{
     background: rgba(277, 277, 277, 0.7);
     padding: 5px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    z-index: 2000;
+    z-index: 3;
 }
 
 header.sticky .logo{
@@ -588,7 +588,7 @@ IMG.triângulo{
     border-radius: 50%;
     box-shadow: inset 0 0 50px #000;
     background: rgba(34,34,34,0.5);
-    z-index: 1000;
+    z-index: 2;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -645,7 +645,7 @@ svg{
     position: relative;
     width: 150px;
     height: 150px;
-    z-index: 1000;
+    z-index: 2;
 }
 
 svg circle{
