@@ -84,7 +84,7 @@ header{
     left: 0;
     width: 100%;
     padding: 40px 100px;
-    z-index: 3;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -587,7 +587,7 @@ IMG.triângulo{
     border-radius: 50%;
     box-shadow: inset 0 0 50px #000;
     background: rgba(34,34,34,0.5);
-    z-index: 2;
+    z-index: 1000;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -644,7 +644,7 @@ svg{
     position: relative;
     width: 150px;
     height: 150px;
-    z-index: 2;
+    z-index: 1000;
 }
 
 svg circle{
