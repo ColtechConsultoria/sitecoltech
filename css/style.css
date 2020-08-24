@@ -97,7 +97,6 @@ header.sticky{
     background: rgba(277, 277, 277, 0.7);
     padding: 5px 100px;
     box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-    z-index: 3;
 }
 
 header.sticky .logo{
