@@ -1147,7 +1147,7 @@ svg circle:nth-child(2){
 }
 
 
-@media(min-width:661px) and (max-width:1030px){
+@media(min-width:661px) and (max-width:1019px){
 
 
     /*portifólios*/
@@ -1161,8 +1161,8 @@ svg circle:nth-child(2){
     }
 
     .portifólios {
-        margin-top: 1em;
-        margin-bottom: 4em;
+        margin-top: -14em;
+        
     }
 
     .portifólios .card {
