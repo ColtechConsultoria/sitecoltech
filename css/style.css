@@ -3,7 +3,7 @@
 
 /* família de fontes: 'Lato', sans-serif; */
 
-body { overflow-x: hidden; background-color: white;}
+body { overflow-x: hidden; background-image: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,.9)), url(../img/fundo.png); background-size: auto;}
 
 *{
     margin: 0;
@@ -31,9 +31,11 @@ body { overflow-x: hidden; background-color: white;}
 .banner{
     position: relative;
     min-height: 100vh;
-    background: url(../img/banner.png);
+    background: url(../img/banner2.png);
     background-size: cover;
     background-position: right;
+    background-repeat: no-repeat;
+    background-position-y: 0em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +56,7 @@ body { overflow-x: hidden; background-color: white;}
     color: white;
     /* color: transparent; */
     /* font-weight: 900; */
-    font-size: 4em;
+    font-size: 2em;
     /* -webkit-text-stroke: 4px white; */
     text-shadow: black 0.1em 0.1em 0.1em;
     text-transform: uppercase;
@@ -65,7 +67,7 @@ body { overflow-x: hidden; background-color: white;}
 
 .btn{
     position: relative;
-    background: black;
+    background: linear-gradient(90deg, orange, orangered);
     display: inline-block;
     color: #fff;
     margin-top: 20px;
@@ -90,7 +92,7 @@ header{
     align-items: center;
     transition: 0.7s;
     height: 5em;
-    background-color: rgba(247, 134, 32, 0.6);
+    background-color: transparent;
 }
 
 header.sticky{
@@ -170,8 +172,6 @@ IMG.triângulo{
 .apresentação{
     font-family: 'Exo', sans-serif;
     color: #fff;
-    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,.9)), url(../img/fundo.png);
-    background-size: auto;
     margin-top: -2em;
 }
 
@@ -430,10 +430,12 @@ IMG.triângulo{
     min-height: 50vh;
    
 }
-.port{
+.port {
     background-color: #000200;
     height: 20em;
+    margin-top: -1px;
 }
+
 .portifólios{
     position: relative;
     display: flex;
@@ -664,17 +666,17 @@ svg circle:nth-child(2){
 }
 
 .cartinha:nth-child(1) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 90)/100);
+    stroke-dashoffset: calc(440 - (440 * 55)/100);
     stroke: #00ff43;
 }
 
 .cartinha:nth-child(2) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 85)/100);
+    stroke-dashoffset: calc(440 - (440 * 52)/100);
     stroke: orange;
 }
 
 .cartinha:nth-child(3) svg circle:nth-child(2) {
-    stroke-dashoffset: calc(440 - (440 * 60)/100);
+    stroke-dashoffset: calc(440 - (440 * 100)/100);
     stroke: orangered;
 }
 
@@ -949,7 +951,7 @@ svg circle:nth-child(2){
     }
 
     .banner h2 .nomeempresa {
-        font-size: 3em;
+        font-size: 1.2em;
         /*-webkit-text-stroke: 3px white; */
     }
 
@@ -1149,6 +1151,9 @@ svg circle:nth-child(2){
 
 @media(min-width:661px) and (max-width:1019px){
 
+    .banner h2 .nomeempresa {
+        font-size: 1.5em;
+    }
 
     /*portifólios*/
 
@@ -1161,7 +1166,7 @@ svg circle:nth-child(2){
     }
 
     .portifólios {
-        margin-top: -14em;
+        margin-top: 0em;
         
     }
 
@@ -1225,10 +1230,14 @@ svg circle:nth-child(2){
 
 }
 
+@media(min-width:1020) and (max-width:1100){
+    .banner{
+        background-position-y: -17.5em;
+    }
+}
 
 
 @media(min-width:1020px) and (max-width:1200px){
-
 
     .divisória{
         margin-top: 21em;
@@ -1373,7 +1382,7 @@ svg circle:nth-child(2){
     }
 
     .banner h2{
-        font-size: 1.5em;  
+        font-size: 2.3em;  
     }
 
     .banner h3{
