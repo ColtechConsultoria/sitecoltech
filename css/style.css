@@ -432,7 +432,7 @@ IMG.triângulo{
 }
 .port {
     background-color: #000200;
-    height: 20em;
+    height: 22em;
     margin-top: -1px;
 }
 
@@ -682,6 +682,10 @@ svg circle:nth-child(2){
 
 
 /*nossos membros*/
+
+.owl-pagination{
+    margin-bottom: 2em;
+}
 
 .nossosmembros h2 {
     width: 100%;
@@ -1099,7 +1103,7 @@ svg circle:nth-child(2){
     }
 
     .port {
-        height: 43em;
+        height: 45em;
     }
 
     /*membros*/
